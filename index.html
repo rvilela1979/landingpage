@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>RExSoft — Transforme dados de terrenos em relatórios inquestionáveis</title>
+    <meta name="description" content="Analise a viabilidade dos seus empreendimentos imobiliários em um processo seguro e padronizado. Relatórios profissionais para comitês, sem depender de planilhas." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rexsoft.com.br/" />
+    <meta property="og:site_name" content="RExSoft" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="RExSoft — Transforme dados de terrenos em relatórios inquestionáveis" />
+    <meta property="og:description" content="Analise a viabilidade dos seus empreendimentos imobiliários em um processo seguro e padronizado. Relatórios profissionais para comitês, sem depender de planilhas." />
+    <meta property="og:image" content="https://rexsoft.com.br/assets/img/og-cover.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="RExSoft — Transforme dados de terrenos em relatórios inquestionáveis" />
+    <meta name="twitter:description" content="Analise a viabilidade dos seus empreendimentos imobiliários em um processo seguro e padronizado. Relatórios profissionais para comitês, sem depender de planilhas." />
+    <meta name="twitter:image" content="https://rexsoft.com.br/assets/img/og-cover.jpg" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="assets/icons/solar-icons.js"></script>
+    <script src="assets/js/vendor/iconify-icon.min.js"></script>
+</head>
+
+<body class="antialiased min-h-screen selection:bg-teal-600 selection:text-white">
+    <div class="max-w-[1400px] mx-auto border-x border-stone-300 relative bg-[#F8F8F8]">
+
+        <!-- Vertical grid guide lines -->
+        <div class="absolute inset-0 pointer-events-none grid grid-cols-1 md:grid-cols-12 gap-0 z-0 h-full w-full">
+            <div class="hidden md:block md:col-span-3 border-r border-stone-300/40 h-full"></div>
+            <div class="hidden md:block md:col-span-6 border-r border-stone-300/40 h-full"></div>
+            <div class="hidden md:block md:col-span-3 h-full"></div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- HEADER -->
+        <!-- ============================================================ -->
+        <header class="relative z-50 border-b border-white/10 sticky top-0 bg-dark-900/95 backdrop-blur-md nav-load">
+            <div class="flex justify-between items-center px-4 md:px-8 py-4">
+                <a class="flex items-center gap-2 shrink-0" href="#hero">
+                    <img alt="RExSoft" class="h-6 w-auto" src="assets/img/logos/logo-branca.png" />
+                </a>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-xs font-medium tracking-widest uppercase text-stone-300 hover:text-teal-400 transition-colors" href="#para-quem">Para Quem</a>
+                    <a class="text-xs font-medium tracking-widest uppercase text-stone-300 hover:text-teal-400 transition-colors" href="#reforma-tributaria">Reforma Tributária</a>
+                    <a class="text-xs font-medium tracking-widest uppercase text-stone-300 hover:text-teal-400 transition-colors" href="#como-funciona">Como Funciona</a>
+                    <a class="text-xs font-medium tracking-widest uppercase text-stone-300 hover:text-teal-400 transition-colors" href="#clientes">Clientes</a>
+                    <a class="text-xs font-medium tracking-widest uppercase text-stone-300 hover:text-teal-400 transition-colors" href="#os-socios">Quem Somos</a>
+                    <a class="text-xs font-medium tracking-widest uppercase text-stone-300 hover:text-teal-400 transition-colors" href="#preco">Investimento</a>
+                    <a class="text-xs font-medium tracking-widest uppercase text-stone-300 hover:text-teal-400 transition-colors" href="#faq">FAQ</a>
+                </nav>
+                <div class="hidden md:flex items-center gap-3">
+                    <a class="inline-flex items-center gap-2 text-xs font-medium uppercase tracking-widest border border-teal-400/50 text-teal-300 rounded-full px-5 py-2.5 hover:bg-teal-400 hover:text-dark-900 hover:border-teal-400 transition-all" href="https://app.rexsoft.com.br/">Acesse o sistema</a>
+                    <a class="inline-flex items-center gap-2 text-xs font-medium uppercase tracking-widest bg-teal-600 text-white rounded-full px-5 py-2.5 hover:bg-teal-700 active:bg-teal-800 transition-all" href="https://app.rexsoft.com.br/Auth/RegisterBasic">Criar conta grátis</a>
+                </div>
+                <button class="md:hidden text-white" id="mobile-menu-btn" type="button">
+                    <iconify-icon class="text-2xl" icon="solar:hamburger-menu-linear"></iconify-icon>
+                </button>
+            </div>
+            <nav class="hidden md:hidden flex-col gap-4 px-6 pb-6 border-t border-white/10" id="mobile-menu">
+                <a class="text-sm uppercase tracking-widest text-stone-300" href="#para-quem">Para Quem</a>
+                <a class="text-sm uppercase tracking-widest text-stone-300" href="#reforma-tributaria">Reforma Tributária</a>
+                <a class="text-sm uppercase tracking-widest text-stone-300" href="#como-funciona">Como Funciona</a>
+                <a class="text-sm uppercase tracking-widest text-stone-300" href="#clientes">Clientes</a>
+                <a class="text-sm uppercase tracking-widest text-stone-300" href="#os-socios">Quem Somos</a>
+                <a class="text-sm uppercase tracking-widest text-stone-300" href="#preco">Investimento</a>
+                <a class="text-sm uppercase tracking-widest text-stone-300" href="#faq">FAQ</a>
+                <a class="inline-flex items-center justify-center gap-2 text-xs font-medium uppercase tracking-widest bg-teal-600 text-white rounded-full px-5 py-2.5" href="https://app.rexsoft.com.br/Auth/RegisterBasic">Criar conta grátis</a>
+            </nav>
+        </header>
+
+        <main>
+        <!-- ============================================================ -->
+        <!-- HERO -->
+        <!-- ============================================================ -->
+        <section class="relative z-10 min-h-[92vh] flex items-center overflow-hidden bg-gradient-to-br from-dark-900 via-dark-900 to-dark-700 bg-grid" id="hero">
+            <div class="noise"></div>
+            <div class="hidden md:block absolute top-16 right-[8%] w-48 h-48 bg-teal-500/10 animate-morph animate-float pointer-events-none z-[1]"></div>
+            <div class="hidden md:block absolute bottom-10 left-[6%] w-24 h-24 border border-white/10 rounded-full animate-float pointer-events-none z-[1]"></div>
+
+            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6 md:px-12 py-10 w-full">
+                <div>
+                    <div class="reveal active inline-flex items-center gap-2 mb-6 px-3 py-1.5 border border-white/25 rounded-full backdrop-blur-md">
+                        <img alt="" class="h-4 w-auto opacity-90" src="assets/img/logos/logo-branca.png" />
+                        <span class="text-xs font-mono uppercase tracking-widest text-white/80">Desenvolvido pela maior referência em Real Estate do Brasil</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tighter leading-[1.05] text-white mb-4" id="hero-title">
+                        <span class="text-reveal-wrapper"><span class="text-reveal-content delay-100">Transforme dados de terrenos em</span></span><br />
+                        <span class="text-reveal-wrapper"><span class="text-reveal-content delay-300 text-teal-400">relatórios inquestionáveis</span></span>
+                    </h1>
+
+                    <p class="reveal delay-500 text-lg leading-relaxed text-stone-300 max-w-xl mb-6">
+                        Analise a viabilidade dos seus empreendimentos imobiliários em um processo seguro e padronizado. Gere relatórios profissionais para comitês sem depender de planilhas.
+                    </p>
+
+                    <div class="reveal delay-600 flex flex-wrap items-center gap-3 mb-6">
+                        <span class="inline-flex items-center gap-2 px-3 py-1.5 border border-white/25 rounded-full text-xs font-mono uppercase text-white/80 backdrop-blur-md">
+                            <iconify-icon class="text-teal-400" icon="solar:check-circle-bold"></iconify-icon> Metodologia RExperts validada
+                        </span>
+                        <span class="inline-flex items-center gap-2 px-3 py-1.5 border border-white/25 rounded-full text-xs font-mono uppercase text-white/80 backdrop-blur-md">
+                            <iconify-icon class="text-teal-400" icon="solar:check-circle-bold"></iconify-icon> Reforma tributária incluída
+                        </span>
+                        <span class="inline-flex items-center gap-2 px-3 py-1.5 border border-white/25 rounded-full text-xs font-mono uppercase text-white/80 backdrop-blur-md">
+                            <iconify-icon class="text-teal-400" icon="solar:check-circle-bold"></iconify-icon> Relatórios para comitê
+                        </span>
+                    </div>
+
+                    <div class="reveal delay-700 flex flex-col sm:flex-row gap-4">
+                        <div class="group relative w-max">
+                            <div class="-inset-2 group-hover:opacity-100 transition duration-500 bg-teal-500/30 opacity-0 rounded-full absolute blur-xl"></div>
+                            <a class="relative z-10 flex items-center justify-center overflow-hidden rounded-full p-[1px] leading-none" href="https://app.rexsoft.com.br/Auth/RegisterBasic">
+                                <span class="absolute inset-[-1000%] animate-[spin_2.5s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_0_320deg,white_360deg)]"></span>
+                                <span class="relative flex h-full w-full items-center gap-2 rounded-full bg-teal-600 pt-4 pr-8 pb-4 pl-8 ring-1 ring-white/10">
+                                    <span class="absolute inset-0 overflow-hidden rounded-full">
+                                        <span class="absolute top-0 left-0 h-full w-full -skew-x-12 bg-gradient-to-r from-transparent via-white/25 to-transparent opacity-0 group-hover:opacity-100 group-hover:shimmer-sweep"></span>
+                                    </span>
+                                    <span class="relative z-10 text-sm font-medium tracking-wide text-white">Criar conta grátis e testar 1 projeto</span>
+                                    <iconify-icon class="relative z-10 text-lg text-white/70 group-hover:translate-x-1 group-hover:text-white transition-transform" icon="solar:arrow-right-up-linear"></iconify-icon>
+                                </span>
+                            </a>
+                        </div>
+                        <a class="inline-flex items-center justify-center gap-2 text-sm font-medium uppercase tracking-widest border border-white/30 text-white rounded-full px-8 py-4 hover:bg-white/10 transition-all" href="#como-funciona">
+                            Como funciona
+                        </a>
+                    </div>
+                </div>
+
+                <div class="reveal delay-400">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/10 aspect-video">
+                        <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/KVKjKYWt6u0" title="Vídeo de vendas RExSoft"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ticker marquee -->
+        <div class="relative z-10 border-b border-stone-300 overflow-hidden py-4 bg-stone-100/60">
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <span class="text-xs font-mono uppercase tracking-widest text-stone-500 mx-8">Incorporadoras</span>
+                    <span class="text-xs font-mono uppercase tracking-widest text-stone-300 mx-8">•</span>
+                    <span class="text-xs font-mono uppercase tracking-widest text-stone-500 mx-8">Loteadoras</span>
+                    <span class="text-xs font-mono uppercase tracking-widest text-stone-300 mx-8">•</span>
+                    <span class="text-xs font-mono uppercase tracking-widest text-stone-500 mx-8">Gestores de Fundos</span>
+                    <span class="text-xs font-mono uppercase tracking-widest text-stone-300 mx-8">•</span>
+                    <span class="text-xs font-mono uppercase tracking-widest text-stone-500 mx-8">Bancos</span>
+                    <span class="text-xs font-mono uppercase tracking-widest text-stone-300 mx-8">•</span>
+                    <span class="text-xs font-mono uppercase tracking-widest text-stone-500 mx-8">Diretores de Novos Negócios</span>
+                    <span class="text-xs font-mono uppercase tracking-widest text-stone-300 mx-8">•</span>
+                </div>
+                <div class="marquee-content">
+                    <span class="text-xs font-mono uppercase tracking-widest text-stone-500 mx-8">Incorporadoras</span>
+                    <span class="text-xs font-mono uppercase tracking-widest text-stone-300 mx-8">•</span>
+                    <span class="text-xs font-mono uppercase tracking-widest text-stone-500 mx-8">Loteadoras</span>
+                    <span class="text-xs font-mono uppercase tracking-widest text-stone-300 mx-8">•</span>
+                    <span class="text-xs font-mono uppercase tracking-widest text-stone-500 mx-8">Gestores de Fundos</span>
+                    <span class="text-xs font-mono uppercase tracking-widest text-stone-300 mx-8">•</span>
+                    <span class="text-xs font-mono uppercase tracking-widest text-stone-500 mx-8">Bancos</span>
+                    <span class="text-xs font-mono uppercase tracking-widest text-stone-300 mx-8">•</span>
+                    <span class="text-xs font-mono uppercase tracking-widest text-stone-500 mx-8">Diretores de Novos Negócios</span>
+                    <span class="text-xs font-mono uppercase tracking-widest text-stone-300 mx-8">•</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- 01 — O PROBLEMA -->
+        <!-- ============================================================ -->
+        <section class="relative z-10 border-b border-stone-300 bg-white">
+            <div class="p-8 md:p-12 border-b border-stone-300 bg-stone-100/50 reveal">
+                <span class="text-xs font-mono uppercase text-teal-600 block mb-2">01 / O Problema</span>
+                <h2 class="text-3xl md:text-5xl font-medium tracking-tighter text-stone-900">A armadilha invisível da planilha</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="p-8 md:p-12 border-b md:border-b-0 md:border-r border-stone-300 reveal">
+                    <p class="text-lg leading-relaxed text-stone-700 mb-6">
+                        Você construiu seu negócio com base em experiência e intuição. Suas planilhas funcionaram por anos. Mas aqui está a verdade que ninguém fala:
+                        <strong class="text-stone-900">cada célula é um ponto de falha silencioso.</strong>
+                    </p>
+                    <ul class="space-y-4 mb-6">
+                        <li class="flex items-start gap-3">
+                            <iconify-icon class="text-xl text-red-600 shrink-0 mt-0.5" icon="solar:danger-triangle-bold"></iconify-icon>
+                            <span class="text-stone-700">Uma única fórmula alterada sem revisão.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <iconify-icon class="text-xl text-red-600 shrink-0 mt-0.5" icon="solar:danger-triangle-bold"></iconify-icon>
+                            <span class="text-stone-700">Um vínculo quebrado entre abas.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <iconify-icon class="text-xl text-red-600 shrink-0 mt-0.5" icon="solar:danger-triangle-bold"></iconify-icon>
+                            <span class="text-stone-700">Uma premissa inserida de forma diferente por outro analista.</span>
+                        </li>
+                    </ul>
+                    <p class="text-stone-700 leading-relaxed mb-6">
+                        Esses erros se escondem na complexidade e <strong class="text-stone-900">contaminam toda a projeção financeira.</strong> Você apresenta números ao comitê achando que está seguro... mas está construindo sobre areia.
+                    </p>
+                    <p class="text-stone-700 leading-relaxed">
+                        E não é sua culpa. Planilhas nunca foram projetadas para gerenciar o risco de um investimento de <strong class="text-stone-900">50 milhões de reais</strong>. Elas são excelentes para listas simples, mas se tornam bombas-relógio quando usadas para decisões que podem definir o futuro da sua empresa.
+                    </p>
+                </div>
+                <div class="p-8 md:p-12 reveal delay-200 flex flex-col justify-center gap-6 bg-stone-100/30">
+                    <div class="w-full border border-stone-300 rounded-lg overflow-hidden shadow-sm bg-white">
+                        <div class="flex items-center gap-2 px-4 py-3 border-b border-stone-300 bg-stone-100">
+                            <iconify-icon class="text-red-600 text-lg" icon="solar:file-corrupted-bold-duotone"></iconify-icon>
+                            <span class="text-xs font-mono text-stone-600">viabilidade_final_v23_REVISADO.xlsx</span>
+                        </div>
+                        <div class="grid grid-cols-4 text-xs font-mono">
+                            <div class="p-3 border-b border-r border-stone-200 bg-stone-50 text-center text-stone-400">A</div>
+                            <div class="p-3 border-b border-r border-stone-200 bg-stone-50 text-center text-stone-400">B</div>
+                            <div class="p-3 border-b border-r border-stone-200 bg-stone-50 text-center text-stone-400">C</div>
+                            <div class="p-3 border-b border-stone-200 bg-stone-50 text-center text-stone-400">D</div>
+
+                            <div class="p-3 border-b border-r border-stone-200 text-stone-700">Custo</div>
+                            <div class="p-3 border-b border-r border-stone-200 text-stone-700">R$ 12M</div>
+                            <div class="p-3 border-b border-r border-stone-200 bg-red-100 text-red-600 font-semibold">#REF!</div>
+                            <div class="p-3 border-b border-stone-200 bg-red-100 text-red-600">=B2*C3</div>
+
+                            <div class="p-3 border-r border-stone-200 text-stone-700">TIR</div>
+                            <div class="p-3 border-r border-stone-200 text-stone-700">22%</div>
+                            <div class="p-3 border-r border-stone-200 bg-red-100 text-red-600">=XIRR(</div>
+                            <div class="p-3 bg-red-100 text-red-600 font-semibold">#VALUE!</div>
+                        </div>
+                    </div>
+                    <blockquote class="border-l-4 border-teal-600 bg-white pl-6 py-4 text-stone-800 italic shadow-sm">
+                        "O problema não é a sua equipe ou o seu processo. É a ferramenta errada para o trabalho errado."
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 02 — A OPORTUNIDADE -->
+        <!-- ============================================================ -->
+        <section class="relative z-10 border-b border-stone-300 bg-gradient-to-br from-dark-900 to-dark-700 overflow-hidden">
+            <div class="p-8 md:p-12 border-b border-white/10 reveal">
+                <span class="text-xs font-mono uppercase text-teal-400 block mb-2">02 / A Oportunidade</span>
+                <h2 class="text-3xl md:text-5xl font-medium tracking-tighter text-white">O processo profissional que faltava</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="p-8 md:p-12 border-b md:border-b-0 md:border-r border-white/10 reveal">
+                    <p class="text-stone-300 leading-relaxed mb-4">
+                        Existe uma maneira de analisar seus projetos com a mesma segurança que bancos de investimento usam. Uma plataforma que elimina o risco de erros ocultos porque foi construída especificamente para o mercado imobiliário brasileiro.
+                    </p>
+                    <p class="text-stone-300 leading-relaxed mb-8">
+                        O <strong class="text-white">RExSoft</strong> usa a metodologia validada pelo RExperts em centenas de projetos de consultoria.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3"><iconify-icon class="text-xl text-teal-400 shrink-0 mt-0.5" icon="solar:check-circle-bold"></iconify-icon><span class="text-stone-200">Você insere as premissas em campos estruturados</span></li>
+                        <li class="flex items-start gap-3"><iconify-icon class="text-xl text-teal-400 shrink-0 mt-0.5" icon="solar:check-circle-bold"></iconify-icon><span class="text-stone-200">O sistema processa com arquitetura blindada contra falhas</span></li>
+                        <li class="flex items-start gap-3"><iconify-icon class="text-xl text-teal-400 shrink-0 mt-0.5" icon="solar:check-circle-bold"></iconify-icon><span class="text-stone-200">Em minutos: indicadores precisos + relatórios padronizados</span></li>
+                        <li class="flex items-start gap-3"><iconify-icon class="text-xl text-teal-400 shrink-0 mt-0.5" icon="solar:check-circle-bold"></iconify-icon><span class="text-stone-200">Aprovação imediata em qualquer comitê</span></li>
+                    </ul>
+                    <a class="inline-flex items-center gap-2 text-sm font-medium uppercase tracking-widest border border-teal-300/50 text-teal-300 rounded-full px-8 py-3 hover:bg-teal-400 hover:text-dark-900 hover:border-teal-400 transition-all" href="https://app.rexsoft.com.br/Auth/RegisterBasic">Criar conta grátis</a>
+                </div>
+                <div class="p-8 md:p-12 reveal delay-200">
+                    <div class="flex items-center gap-3 mb-6">
+                        <img alt="RExSoft" class="h-6 w-auto opacity-90" src="assets/img/logos/logo-branca.png" />
+                        <p class="text-sm text-stone-400">Desenvolvido pela maior referência em Real Estate do Brasil. Equipe com mais de R$ 20 bilhões de projetos imobiliários estruturados.</p>
+                    </div>
+                    <div class="border border-white/10 rounded-lg p-8 bg-white/5">
+                        <span class="text-xs font-mono uppercase tracking-widest text-teal-400 block mb-6">Imagine:</span>
+                        <ul class="space-y-5">
+                            <li class="flex items-start gap-3"><span class="text-teal-400 mt-0.5">✦</span><span class="text-stone-200 leading-relaxed">Apresentar um projeto a um fundo e receber o sim na primeira reunião</span></li>
+                            <li class="flex items-start gap-3"><span class="text-teal-400 mt-0.5">✦</span><span class="text-stone-200 leading-relaxed">Analisar o dobro de terrenos na metade do tempo</span></li>
+                            <li class="flex items-start gap-3"><span class="text-teal-400 mt-0.5">✦</span><span class="text-stone-200 leading-relaxed">Dormir tranquilo sabendo que cada número foi calculado com precisão absoluta</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 03 — PARA QUEM É -->
+        <!-- ============================================================ -->
+        <section class="relative z-10 border-b border-stone-300 bg-white" id="para-quem">
+            <div class="p-8 md:p-12 border-b border-stone-300 bg-stone-100/50 reveal">
+                <span class="text-xs font-mono uppercase text-teal-600 block mb-2">03 / Para Quem É</span>
+                <h2 class="text-3xl md:text-5xl font-medium tracking-tighter text-stone-900">O RExSoft foi feito para quem toma <span class="text-teal-600">decisões de alto impacto</span></h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3">
+                <div class="icon-card group p-8 md:p-10 border-b md:border-b-0 md:border-r border-stone-300 bg-[#F8F8F8] hover:bg-white transition-colors duration-500 reveal">
+                    <iconify-icon class="icon-base text-4xl text-stone-800 mb-6 block" icon="solar:buildings-2-bold-duotone"></iconify-icon>
+                    <h3 class="text-xl font-semibold text-stone-900 mb-3 group-hover:translate-x-1 transition-transform duration-500">Incorporadores e Loteadores Estruturados</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">Empresas com pipeline acima de 100 milhões em VGV que precisam padronizar a análise de múltiplos projetos e acelerar decisões de investimento sem comprometer a segurança.</p>
+                </div>
+                <div class="icon-card group p-8 md:p-10 border-b md:border-b-0 md:border-r border-stone-300 bg-[#F8F8F8] hover:bg-white transition-colors duration-500 reveal delay-150">
+                    <iconify-icon class="icon-base text-4xl text-stone-800 mb-6 block" icon="solar:case-round-bold-duotone"></iconify-icon>
+                    <h3 class="text-xl font-semibold text-stone-900 mb-3 group-hover:translate-x-1 transition-transform duration-500">Diretores de Novos Negócios</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">Executivos responsáveis por aprovar terrenos e oportunidades que buscam eliminar gargalos na análise e apresentar relatórios profissionais para sócios e conselhos.</p>
+                </div>
+                <div class="icon-card group p-8 md:p-10 bg-[#F8F8F8] hover:bg-white transition-colors duration-500 reveal delay-300">
+                    <iconify-icon class="icon-base text-4xl text-stone-800 mb-6 block" icon="solar:safe-square-bold-duotone"></iconify-icon>
+                    <h3 class="text-xl font-semibold text-stone-900 mb-3 group-hover:translate-x-1 transition-transform duration-500">Gestores de Fundos e Bancos</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">Profissionais que avaliam risco de crédito e potencial de investimento em projetos imobiliários e necessitam de uma ferramenta padronizada para gerar relatórios auditáveis.</p>
+                </div>
+            </div>
+            <div class="px-8 pb-8 md:px-12 md:pb-12 reveal delay-300">
+                <div class="rounded-2xl overflow-hidden shadow-xl border border-stone-300 max-w-3xl mx-auto">
+                    <video autoplay class="w-full aspect-video object-cover" controls loop muted playsinline src="assets/video/hero-video.mp4"></video>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 04 — PROPOSTA DE VALOR -->
+        <!-- ============================================================ -->
+        <section class="relative z-10 border-b border-stone-300 bg-stone-100/40">
+            <div class="p-8 md:p-12 border-b border-stone-300 bg-stone-100/50 reveal">
+                <span class="text-xs font-mono uppercase text-teal-600 block mb-2">04 / Proposta de Valor</span>
+                <h2 class="text-3xl md:text-5xl font-medium tracking-tighter text-stone-900">Não é apenas uma ferramenta. <span class="text-teal-600">É um guia.</span></h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="icon-card p-8 border-b lg:border-b-0 sm:border-r border-stone-300 reveal">
+                    <iconify-icon class="icon-base text-3xl text-teal-600 mb-4 block" icon="solar:clock-circle-bold-duotone"></iconify-icon>
+                    <h3 class="text-base font-semibold text-stone-900 mb-2">Análise em minutos, não em dias</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">Você insere as premissas do projeto e recebe os indicadores financeiros completos em minutos. Sem esperar horas pela planilha. Sem perder terrenos porque a análise demorou demais.</p>
+                </div>
+                <div class="icon-card p-8 border-b lg:border-b-0 lg:border-r border-stone-300 reveal delay-150">
+                    <iconify-icon class="icon-base text-3xl text-teal-600 mb-4 block" icon="solar:document-text-bold-duotone"></iconify-icon>
+                    <h3 class="text-base font-semibold text-stone-900 mb-2">Relatórios prontos para o comitê</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">Apresentações padronizadas na linguagem do mercado financeiro. TIR, VPL, payback, exposição de caixa. Tudo organizado em um documento profissional que gera aprovação imediata.</p>
+                </div>
+                <div class="icon-card p-8 border-b lg:border-b-0 sm:border-r border-stone-300 reveal delay-300">
+                    <iconify-icon class="icon-base text-3xl text-teal-600 mb-4 block" icon="solar:layers-bold-duotone"></iconify-icon>
+                    <h3 class="text-base font-semibold text-stone-900 mb-2">Compare cenários sem retrabalho</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">Teste diferentes premissas com poucos cliques. Veja o impacto de cada variável no resultado. Incorporação, loteamento, renda ou misto. Tudo na mesma plataforma.</p>
+                </div>
+                <div class="icon-card p-8 reveal delay-500">
+                    <iconify-icon class="icon-base text-3xl text-teal-600 mb-4 block" icon="solar:shield-check-bold-duotone"></iconify-icon>
+                    <h3 class="text-base font-semibold text-stone-900 mb-2">Impactos da reforma tributária incluídos</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">Único sistema que calcula automaticamente os efeitos da nova tributação para todos os tipos de empreendimento. Você não precisa virar especialista em CBS e IBS.</p>
+                </div>
+            </div>
+            <div class="p-8 md:p-12 border-t border-stone-300 reveal delay-200 flex justify-center">
+                <div class="relative w-full max-w-3xl">
+                    <div class="rounded-lg overflow-hidden border border-stone-300 shadow-xl bg-white">
+                        <div class="flex items-center gap-1.5 px-4 py-2.5 border-b border-stone-300 bg-stone-100">
+                            <span class="w-2.5 h-2.5 rounded-full bg-red-500"></span>
+                            <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+                            <span class="w-2.5 h-2.5 rounded-full bg-green-500"></span>
+                            <span class="text-xs font-mono text-stone-400 ml-3">app.rexsoft.com.br</span>
+                        </div>
+                        <div class="aspect-[2/1] bg-white">
+                            <img alt="Tela do sistema RExSoft" class="w-full h-full object-contain transition-opacity duration-500" data-carousel-img id="value-carousel-img" src="assets/img/screenshots/dashboard-print-5.jpeg" />
+                        </div>
+                    </div>
+                    <button aria-label="Anterior" class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white shadow-md border border-stone-300 flex items-center justify-center hover:bg-stone-100 transition-colors" data-carousel-prev type="button">
+                        <iconify-icon class="text-lg text-stone-700" icon="solar:alt-arrow-left-linear"></iconify-icon>
+                    </button>
+                    <button aria-label="Próximo" class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white shadow-md border border-stone-300 flex items-center justify-center hover:bg-stone-100 transition-colors" data-carousel-next type="button">
+                        <iconify-icon class="text-lg text-stone-700" icon="solar:alt-arrow-right-linear"></iconify-icon>
+                    </button>
+                    <div class="flex justify-center gap-2 mt-4" data-carousel-dots>
+                        <button aria-label="Slide 1" class="w-2.5 h-2.5 rounded-full bg-teal-600 transition-colors" data-carousel-dot="0" type="button"></button>
+                        <button aria-label="Slide 2" class="w-2.5 h-2.5 rounded-full bg-stone-300 transition-colors" data-carousel-dot="1" type="button"></button>
+                        <button aria-label="Slide 3" class="w-2.5 h-2.5 rounded-full bg-stone-300 transition-colors" data-carousel-dot="2" type="button"></button>
+                        <button aria-label="Slide 4" class="w-2.5 h-2.5 rounded-full bg-stone-300 transition-colors" data-carousel-dot="3" type="button"></button>
+                        <button aria-label="Slide 5" class="w-2.5 h-2.5 rounded-full bg-stone-300 transition-colors" data-carousel-dot="4" type="button"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 05 — REFORMA TRIBUTÁRIA -->
+        <!-- ============================================================ -->
+        <section class="relative z-10 border-b border-stone-300 bg-white" id="reforma-tributaria">
+            <div class="p-8 md:p-12 border-b border-stone-300 bg-stone-100/50 reveal">
+                <span class="text-xs font-mono uppercase text-teal-600 block mb-2">05 / A Reforma Tributária</span>
+                <h2 class="text-3xl md:text-5xl font-medium tracking-tighter text-stone-900">Transforme a complexidade da reforma tributária em <span class="text-teal-600">oportunidade</span></h2>
+                <p class="text-stone-600 mt-3">A reforma tributária aumenta a complexidade das decisões no mercado imobiliário. Mas onde há complexidade, também existem oportunidades: muitos empreendimentos poderão economizar milhões de reais em tributos, melhorar a rentabilidade e reduzir a necessidade de capital ao longo do projeto.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div class="p-8 md:p-12 border-b lg:border-b-0 lg:border-r border-stone-300 reveal">
+                    <span class="text-xs font-mono uppercase text-stone-400 block mb-6">O que muda no seu projeto</span>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <iconify-icon class="text-2xl text-teal-600 mt-0.5 shrink-0" icon="solar:scale-linear"></iconify-icon>
+                            <div>
+                                <p class="font-semibold text-stone-900">Decisão de regime na transição 2027-2028</p>
+                                <p class="text-sm text-stone-600 mt-1 leading-relaxed">Durante a transição, o melhor regime tributário para cada empreendimento não se define pela alíquota nominal, mas pelo impacto real sobre fluxo de caixa, margem, TIR e exposição de caixa.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <iconify-icon class="text-2xl text-teal-600 mt-0.5 shrink-0" icon="solar:bill-list-linear"></iconify-icon>
+                            <div>
+                                <p class="font-semibold text-stone-900">CBS, IBS, créditos e restituições</p>
+                                <p class="text-sm text-stone-600 mt-1 leading-relaxed">O modelo já considera a evolução das alíquotas de CBS e IBS, os redutores previstos em lei, a apropriação de créditos e as restituições sobre o fluxo de recebíveis.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <iconify-icon class="text-2xl text-teal-600 mt-0.5 shrink-0" icon="solar:widget-4-linear"></iconify-icon>
+                            <div>
+                                <p class="font-semibold text-stone-900">Aplicado a cada tipo de projeto</p>
+                                <p class="text-sm text-stone-600 mt-1 leading-relaxed">Incorporações residenciais e comerciais, SBPE, MCMV, loteamentos, condomínios, imóveis de renda e diferentes estruturas societárias — cada um com sua própria leitura tributária.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <iconify-icon class="text-2xl text-teal-600 mt-0.5 shrink-0" icon="solar:transfer-vertical-linear"></iconify-icon>
+                            <div>
+                                <p class="font-semibold text-stone-900">Do terreno à comissão de venda</p>
+                                <p class="text-sm text-stone-600 mt-1 leading-relaxed">Permutas de terreno, custos de construção, comissões, receitas de venda e de locação: o impacto tributário entra em cada componente da modelagem.</p>
+                            </div>
+                        </div>
+                        <div class="border-l-4 border-teal-600 bg-teal-50/60 rounded-lg p-5">
+                            <p class="font-semibold text-stone-900 mb-1">Você já sabe como tomar essa decisão de forma embasada?</p>
+                            <p class="text-sm text-stone-600 leading-relaxed">Conte com o RExSoft para transformar as novas regras tributárias em números, comparar cenários e tomar decisões com mais segurança, estratégia e embasamento financeiro.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8 md:p-12 reveal delay-200">
+                    <div class="relative">
+                        <div class="rounded-2xl overflow-hidden border border-stone-300 shadow-sm aspect-[4/3]">
+                            <img alt="Palestra da RExperts sobre a reforma tributária no mercado imobiliário" class="w-full h-full object-cover object-center transition-opacity duration-500" data-rt-carousel-img src="assets/img/photos/evento-reforma-tributaria.jpg" />
+                        </div>
+                        <button aria-label="Anterior" class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white shadow-md border border-stone-300 flex items-center justify-center hover:bg-stone-100 transition-colors" data-rt-carousel-prev type="button">
+                            <iconify-icon class="text-lg text-stone-700" icon="solar:alt-arrow-left-linear"></iconify-icon>
+                        </button>
+                        <button aria-label="Próximo" class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white shadow-md border border-stone-300 flex items-center justify-center hover:bg-stone-100 transition-colors" data-rt-carousel-next type="button">
+                            <iconify-icon class="text-lg text-stone-700" icon="solar:alt-arrow-right-linear"></iconify-icon>
+                        </button>
+                    </div>
+                    <p class="text-sm text-stone-500 mt-3" data-rt-carousel-caption>RExperts no palco do <span class="font-semibold text-stone-900">CIMI 360</span>, mostrando como a reforma tributária muda a viabilidade dos empreendimentos imobiliários.</p>
+                    <div class="flex justify-center gap-2 mt-3" data-rt-carousel-dots>
+                        <button aria-label="Slide 1" class="w-2.5 h-2.5 rounded-full bg-teal-600 transition-colors" data-rt-carousel-dot="0" type="button"></button>
+                        <button aria-label="Slide 2" class="w-2.5 h-2.5 rounded-full bg-stone-300 transition-colors" data-rt-carousel-dot="1" type="button"></button>
+                        <button aria-label="Slide 3" class="w-2.5 h-2.5 rounded-full bg-stone-300 transition-colors" data-rt-carousel-dot="2" type="button"></button>
+                        <button aria-label="Slide 4" class="w-2.5 h-2.5 rounded-full bg-stone-300 transition-colors" data-rt-carousel-dot="3" type="button"></button>
+                        <button aria-label="Slide 5" class="w-2.5 h-2.5 rounded-full bg-stone-300 transition-colors" data-rt-carousel-dot="4" type="button"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 06 — COMO FUNCIONA -->
+        <!-- ============================================================ -->
+        <section class="relative z-10 border-b border-stone-300 bg-stone-100/40" id="como-funciona">
+            <div class="p-8 md:p-12 border-b border-stone-300 bg-stone-100/50 reveal">
+                <span class="text-xs font-mono uppercase text-teal-600 block mb-2">06 / Como Funciona</span>
+                <h2 class="text-3xl md:text-5xl font-medium tracking-tighter text-stone-900">Do terreno ao relatório em <span class="text-teal-600">4 passos</span></h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <div class="p-8 border-b lg:border-b-0 md:border-r border-stone-300 reveal">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="text-3xl font-mono text-stone-300">01</span>
+                        <iconify-icon class="text-2xl text-teal-600" icon="solar:widget-add-bold-duotone"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-semibold text-stone-900 mb-2">Estruture seu Projeto</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">Você insere as premissas do empreendimento na plataforma. Custos, prazos, vendas. Tudo organizado em campos específicos que impedem erros de digitação ou fórmulas quebradas.</p>
+                </div>
+                <div class="p-8 border-b lg:border-b-0 lg:border-r border-stone-300 reveal delay-150">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="text-3xl font-mono text-stone-300">02</span>
+                        <iconify-icon class="text-2xl text-teal-600" icon="solar:cpu-bolt-bold-duotone"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-semibold text-stone-900 mb-2">Simule Cenários Instantaneamente</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">O sistema calcula automaticamente o fluxo de caixa completo. Teste diferentes hipóteses com poucos cliques. Veja o impacto de mudar o prazo de obra ou o preço de venda em segundos.</p>
+                </div>
+                <div class="p-8 border-b lg:border-b-0 md:border-r border-stone-300 reveal delay-300">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="text-3xl font-mono text-stone-300">03</span>
+                        <iconify-icon class="text-2xl text-teal-600" icon="solar:document-text-bold-duotone"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-semibold text-stone-900 mb-2">Gere Relatórios Profissionais</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">Receba indicadores precisos como TIR, VPL, Payback e Exposição de Caixa. O sistema cria apresentações completas, prontas para seu comitê de investimentos ou parceiros financeiros.</p>
+                </div>
+                <div class="p-8 reveal delay-500">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="text-3xl font-mono text-stone-300">04</span>
+                        <iconify-icon class="text-2xl text-teal-600" icon="solar:scale-bold-duotone"></iconify-icon>
+                    </div>
+                    <h3 class="text-lg font-semibold text-stone-900 mb-2">Compare e Decida com Segurança</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">Analise incorporações, loteamentos, galpões e projetos de renda na mesma plataforma. Compare oportunidades usando a mesma régua. Tome decisões baseadas em dados auditáveis.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 07 — FUNCIONALIDADES -->
+        <!-- ============================================================ -->
+        <section class="relative z-10 border-b border-stone-300 bg-white">
+            <div class="p-8 md:p-12 border-b border-stone-300 bg-stone-100/50 reveal">
+                <span class="text-xs font-mono uppercase text-teal-600 block mb-2">07 / Funcionalidades</span>
+                <h2 class="text-3xl md:text-5xl font-medium tracking-tighter text-stone-900 mb-3">Tudo o que o <span class="text-teal-600">RExSoft</span> oferece</h2>
+                <p class="text-stone-600 max-w-xl">Uma plataforma completa para modelagem, análise e gestão de projetos imobiliários.</p>
+            </div>
+
+            <div class="divide-y divide-stone-300" id="features-accordion">
+                <div class="reveal">
+                    <button class="w-full flex items-center gap-4 p-6 md:p-8 text-left hover:bg-stone-100/50 transition-colors" data-accordion-trigger type="button">
+                        <div class="w-11 h-11 rounded-lg bg-teal-100 flex items-center justify-center shrink-0"><iconify-icon class="text-xl text-teal-600" icon="solar:buildings-3-bold-duotone"></iconify-icon></div>
+                        <div class="flex-1">
+                            <h3 class="text-base font-semibold text-stone-900">Criação e Gerenciamento de Projetos</h3>
+                            <p class="text-stone-500 text-sm mt-0.5">Modelagem financeira de projetos imobiliários diversos.</p>
+                        </div>
+                        <iconify-icon class="text-xl text-stone-400 shrink-0 rotate-180" data-chevron icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    </button>
+                    <div class="px-6 md:px-8 pb-8 pl-[4.75rem] md:pl-[5.25rem]" data-accordion-panel>
+                        <div class="grid sm:grid-cols-2 gap-x-6 gap-y-3">
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:home-linear"></iconify-icon><span class="text-sm text-stone-600">Casas para vender</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:buildings-2-linear"></iconify-icon><span class="text-sm text-stone-600">Incorporação residencial SBPE - Médio e alto padrão</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:home-angle-linear"></iconify-icon><span class="text-sm text-stone-600">Incorporação residencial MCMV</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:shop-2-linear"></iconify-icon><span class="text-sm text-stone-600">Incorporação comercial - edifícios de salas comerciais</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:widget-4-linear"></iconify-icon><span class="text-sm text-stone-600">Loteamentos abertos e fechados/acesso controlado</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:buildings-3-linear"></iconify-icon><span class="text-sm text-stone-600">Multipropriedades</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:home-2-linear"></iconify-icon><span class="text-sm text-stone-600">Apartamentos e Casas para locação</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:box-linear"></iconify-icon><span class="text-sm text-stone-600">Galpões industriais e logísticos</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:shop-linear"></iconify-icon><span class="text-sm text-stone-600">Imóveis de renda urbana (lojas de rua)</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:buildings-linear"></iconify-icon><span class="text-sm text-stone-600">Edifícios corporativos para locação</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:home-smile-linear"></iconify-icon><span class="text-sm text-stone-600">Renda residencial multifamily</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:bag-linear"></iconify-icon><span class="text-sm text-stone-600">Shopping center, Power Center e Stripmall</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:archive-linear"></iconify-icon><span class="text-sm text-stone-600">Self Storage</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:layers-linear"></iconify-icon><span class="text-sm text-stone-600">Mixed Use</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="w-full flex items-center gap-4 p-6 md:p-8 text-left hover:bg-stone-100/50 transition-colors" data-accordion-trigger type="button">
+                        <div class="w-11 h-11 rounded-lg bg-teal-100 flex items-center justify-center shrink-0"><iconify-icon class="text-xl text-teal-600" icon="solar:settings-bold-duotone"></iconify-icon></div>
+                        <div class="flex-1"><h3 class="text-base font-semibold text-stone-900">Premissas Pré-preenchidas</h3><p class="text-stone-500 text-sm mt-0.5">Facilite simulações com dados já estruturados.</p></div>
+                        <iconify-icon class="text-xl text-stone-400 shrink-0" data-chevron icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    </button>
+                    <div class="hidden px-6 md:px-8 pb-8 pl-[4.75rem] md:pl-[5.25rem]" data-accordion-panel>
+                        <div class="grid sm:grid-cols-2 gap-x-6 gap-y-3">
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:course-up-linear"></iconify-icon><span class="text-sm text-stone-600">Taxas de Juros e Inflação</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:buildings-3-linear"></iconify-icon><span class="text-sm text-stone-600">Aquisição do Terreno ou do Imóvel</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:widget-4-linear"></iconify-icon><span class="text-sm text-stone-600">Quadro de Áreas do Projeto</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:file-check-linear"></iconify-icon><span class="text-sm text-stone-600">Projetos, Aprovação e Licenciamento</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:global-linear"></iconify-icon><span class="text-sm text-stone-600">Lançamento e Marketing</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:city-linear"></iconify-icon><span class="text-sm text-stone-600">Desenvolvimento da Construção</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:dollar-linear"></iconify-icon><span class="text-sm text-stone-600">Renda de Aluguel</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:chart-2-linear"></iconify-icon><span class="text-sm text-stone-600">Velocidade de Vendas</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:dollar-minimalistic-linear"></iconify-icon><span class="text-sm text-stone-600">Vendas à Vista</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:document-text-linear"></iconify-icon><span class="text-sm text-stone-600">Vendas com Financiamento Direto</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:buildings-2-linear"></iconify-icon><span class="text-sm text-stone-600">Vendas com Financiamento Bancário SBPE</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:document-linear"></iconify-icon><span class="text-sm text-stone-600">Vendas MCMV</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:transfer-vertical-linear"></iconify-icon><span class="text-sm text-stone-600">Deduções sobre o Faturamento Caixa</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:bill-list-linear"></iconify-icon><span class="text-sm text-stone-600">Financiamento Tipo Bullet</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:clipboard-check-linear"></iconify-icon><span class="text-sm text-stone-600">Financiamento Tipo SAC</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:file-text-linear"></iconify-icon><span class="text-sm text-stone-600">Financiamento Tipo Price (CRI Price Reajustado por Inflação)</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:scale-linear"></iconify-icon><span class="text-sm text-stone-600">Impostos (Lucro Presumido / RET)</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:graph-new-up-linear"></iconify-icon><span class="text-sm text-stone-600">Desinvestimento / Perpetuidade</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:users-group-rounded-linear"></iconify-icon><span class="text-sm text-stone-600">Estrutura Societária</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="w-full flex items-center gap-4 p-6 md:p-8 text-left hover:bg-stone-100/50 transition-colors" data-accordion-trigger type="button">
+                        <div class="w-11 h-11 rounded-lg bg-teal-100 flex items-center justify-center shrink-0"><iconify-icon class="text-xl text-teal-600" icon="solar:chart-square-bold-duotone"></iconify-icon></div>
+                        <div class="flex-1"><h3 class="text-base font-semibold text-stone-900">Visualização e Análise de Dados</h3><p class="text-stone-500 text-sm mt-0.5">Múltiplos projetos, cenários e integração de mercado.</p></div>
+                        <iconify-icon class="text-xl text-stone-400 shrink-0" data-chevron icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    </button>
+                    <div class="hidden px-6 md:px-8 pb-8 pl-[4.75rem] md:pl-[5.25rem]" data-accordion-panel>
+                        <div class="grid sm:grid-cols-2 gap-x-6 gap-y-3">
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:layers-linear"></iconify-icon><span class="text-sm text-stone-600">Cadastrar e comparar múltiplos projetos</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:chart-2-linear"></iconify-icon><span class="text-sm text-stone-600">Estruturação de cenários para tomada de decisão</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:global-linear"></iconify-icon><span class="text-sm text-stone-600">Integração de informações do mercado imobiliário</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:clock-circle-linear"></iconify-icon><span class="text-sm text-stone-600">Fluxos, Resultados e Indicadores do Projeto, Proprietário, Investidor e Empreendedor</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:widget-2-linear"></iconify-icon><span class="text-sm text-stone-600">Quadro de áreas para simular no detalhe múltiplas tipologias</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:history-linear"></iconify-icon><span class="text-sm text-stone-600">Versionamento de projetos para comparação de cenários</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="w-full flex items-center gap-4 p-6 md:p-8 text-left hover:bg-stone-100/50 transition-colors" data-accordion-trigger type="button">
+                        <div class="w-11 h-11 rounded-lg bg-teal-100 flex items-center justify-center shrink-0"><iconify-icon class="text-xl text-teal-600" icon="solar:wallet-money-bold-duotone"></iconify-icon></div>
+                        <div class="flex-1"><h3 class="text-base font-semibold text-stone-900">Financeiro e Viabilidade</h3><p class="text-stone-500 text-sm mt-0.5">Projeções, simulações e análise de retorno.</p></div>
+                        <iconify-icon class="text-xl text-stone-400 shrink-0" data-chevron icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    </button>
+                    <div class="hidden px-6 md:px-8 pb-8 pl-[4.75rem] md:pl-[5.25rem]" data-accordion-panel>
+                        <div class="grid sm:grid-cols-2 gap-x-6 gap-y-3">
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:course-up-linear"></iconify-icon><span class="text-sm text-stone-600">Projeção de Fluxos Financeiros</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:chart-2-linear"></iconify-icon><span class="text-sm text-stone-600">Tabelas de indicadores com métricas detalhadas</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:dollar-linear"></iconify-icon><span class="text-sm text-stone-600">Fluxo de caixa detalhado com entradas e saídas de capital</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:document-text-linear"></iconify-icon><span class="text-sm text-stone-600">Simulação de diferentes estratégias de financiamento</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:clock-circle-linear"></iconify-icon><span class="text-sm text-stone-600">Cálculo de retorno sobre investimento e TIR</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:buildings-linear"></iconify-icon><span class="text-sm text-stone-600">Estudo de financiamento via bancos, CRIs e outros agentes financeiros</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:course-up-linear"></iconify-icon><span class="text-sm text-stone-600">Simulações de diferentes níveis de endividamento</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:document-linear"></iconify-icon><span class="text-sm text-stone-600">Comparação de custos financeiros por modalidade de funding</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:graph-new-up-linear"></iconify-icon><span class="text-sm text-stone-600">Análises para projeção de venda do ativo</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:clock-circle-linear"></iconify-icon><span class="text-sm text-stone-600">Precificação de cap rate para valuation</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="w-full flex items-center gap-4 p-6 md:p-8 text-left hover:bg-stone-100/50 transition-colors" data-accordion-trigger type="button">
+                        <div class="w-11 h-11 rounded-lg bg-teal-100 flex items-center justify-center shrink-0"><iconify-icon class="text-xl text-teal-600" icon="solar:widget-4-bold-duotone"></iconify-icon></div>
+                        <div class="flex-1"><h3 class="text-base font-semibold text-stone-900">Estruturação e Modelagem</h3><p class="text-stone-500 text-sm mt-0.5">SPEs, captação e simulação de desenvolvimento.</p></div>
+                        <iconify-icon class="text-xl text-stone-400 shrink-0" data-chevron icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    </button>
+                    <div class="hidden px-6 md:px-8 pb-8 pl-[4.75rem] md:pl-[5.25rem]" data-accordion-panel>
+                        <div class="grid sm:grid-cols-2 gap-x-6 gap-y-3">
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:users-group-rounded-linear"></iconify-icon><span class="text-sm text-stone-600">Criação de modelos com SPEs (Sociedades de Propósito Específico)</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:buildings-linear"></iconify-icon><span class="text-sm text-stone-600">Impacto tributário e societário de diferentes estruturas</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:dollar-linear"></iconify-icon><span class="text-sm text-stone-600">Simulação de distribuição de dividendos e retorno de sócios</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:buildings-2-linear"></iconify-icon><span class="text-sm text-stone-600">Propostas de compra e permuta de terrenos</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:course-up-linear"></iconify-icon><span class="text-sm text-stone-600">Simulação de captação de equity com investidores</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:document-text-linear"></iconify-icon><span class="text-sm text-stone-600">Modelos para funding via dívida imobiliária</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:ruler-cross-pen-linear"></iconify-icon><span class="text-sm text-stone-600">Cálculo de custo por m² e cronograma de obras</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:chart-square-linear"></iconify-icon><span class="text-sm text-stone-600">Simulação de custos de construção e retrofit</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:chart-2-linear"></iconify-icon><span class="text-sm text-stone-600">Impacto de prazos na rentabilidade final do projeto</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="w-full flex items-center gap-4 p-6 md:p-8 text-left hover:bg-stone-100/50 transition-colors" data-accordion-trigger type="button">
+                        <div class="w-11 h-11 rounded-lg bg-teal-100 flex items-center justify-center shrink-0"><iconify-icon class="text-xl text-teal-600" icon="solar:file-download-bold-duotone"></iconify-icon></div>
+                        <div class="flex-1"><h3 class="text-base font-semibold text-stone-900">Exportação e Relatórios</h3><p class="text-stone-500 text-sm mt-0.5">PDF, Excel e relatórios para investidores.</p></div>
+                        <iconify-icon class="text-xl text-stone-400 shrink-0" data-chevron icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    </button>
+                    <div class="hidden px-6 md:px-8 pb-8 pl-[4.75rem] md:pl-[5.25rem]" data-accordion-panel>
+                        <div class="grid sm:grid-cols-2 gap-x-6 gap-y-3">
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:document-linear"></iconify-icon><span class="text-sm text-stone-600">Geração de relatórios financeiros em PDF e planilhas Excel</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:layers-linear"></iconify-icon><span class="text-sm text-stone-600">Comparação entre diferentes versões de um projeto</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:case-linear"></iconify-icon><span class="text-sm text-stone-600">Layouts adaptáveis para apresentações e reuniões</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:folder-with-files-linear"></iconify-icon><span class="text-sm text-stone-600">Data room para organização dos documentos de cada projeto</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="w-full flex items-center gap-4 p-6 md:p-8 text-left hover:bg-stone-100/50 transition-colors" data-accordion-trigger type="button">
+                        <div class="w-11 h-11 rounded-lg bg-teal-100 flex items-center justify-center shrink-0"><iconify-icon class="text-xl text-teal-600" icon="solar:lock-keyhole-bold-duotone"></iconify-icon></div>
+                        <div class="flex-1"><h3 class="text-base font-semibold text-stone-900">Compliance e Segurança</h3><p class="text-stone-500 text-sm mt-0.5">LGPD, controle de acesso e proteção de dados.</p></div>
+                        <iconify-icon class="text-xl text-stone-400 shrink-0" data-chevron icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    </button>
+                    <div class="hidden px-6 md:px-8 pb-8 pl-[4.75rem] md:pl-[5.25rem]" data-accordion-panel>
+                        <div class="grid sm:grid-cols-2 gap-x-6 gap-y-3">
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:users-group-rounded-linear"></iconify-icon><span class="text-sm text-stone-600">Diferentes níveis de acesso para equipe e investidores</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:lock-keyhole-linear"></iconify-icon><span class="text-sm text-stone-600">Proteção de dados conforme a LGPD</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:shield-linear"></iconify-icon><span class="text-sm text-stone-600">Armazenamento seguro de informações confidenciais</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:lock-keyhole-linear"></iconify-icon><span class="text-sm text-stone-600">Garantia de anonimização de dados sensíveis</span></div>
+                            <div class="flex items-start gap-2"><iconify-icon class="text-teal-600 text-lg mt-0.5" icon="solar:shield-linear"></iconify-icon><span class="text-sm text-stone-600">Premissas agregadas sem comprometer informações privadas</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 08 — CULTURA DE ATENDIMENTO E PROGRAMAS COMPLEMENTARES -->
+        <!-- ============================================================ -->
+        <section class="relative z-10 border-b border-stone-300 bg-stone-100/40">
+            <div class="p-8 md:p-12 reveal">
+                <div class="grid grid-cols-1 lg:grid-cols-[1fr_480px] gap-8 items-center mb-12">
+                    <div>
+                        <span class="text-xs font-mono uppercase text-teal-600 block mb-2">08 / Cultura de Atendimento</span>
+                        <h2 class="text-3xl md:text-5xl font-medium tracking-tighter text-stone-900">Mais que suporte técnico. <span class="text-teal-600">Parceiros estratégicos.</span></h2>
+                        <div class="w-16 h-1 bg-teal-600 mt-6"></div>
+                    </div>
+                    <div class="rounded-lg overflow-hidden border border-stone-300 shadow-sm">
+                        <img alt="Equipe RExperts em reunião consultiva com cliente" class="w-full h-auto object-cover" src="assets/img/photos/cultura-atendimento.jpg" />
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
+                    <div class="border-t-4 border-teal-600 bg-white rounded-lg shadow-sm p-8 text-center">
+                        <iconify-icon class="text-4xl text-teal-600 mb-4" icon="solar:users-group-rounded-linear"></iconify-icon>
+                        <p class="font-semibold text-stone-900 mb-1">Time especializado em Real Estate</p>
+                        <p class="text-sm text-stone-500">Profissionais que entendem e vivem o mercado.</p>
+                    </div>
+                    <div class="border-t-4 border-teal-600 bg-white rounded-lg shadow-sm p-8 text-center">
+                        <iconify-icon class="text-4xl text-teal-600 mb-4" icon="solar:headphones-round-linear"></iconify-icon>
+                        <p class="font-semibold text-stone-900 mb-1">Atendimento próximo e consultivo</p>
+                        <p class="text-sm text-stone-500">Parceria com quem entende do seu negócio.</p>
+                    </div>
+                    <div class="border-t-4 border-teal-600 bg-white rounded-lg shadow-sm p-8 text-center">
+                        <iconify-icon class="text-4xl text-teal-600 mb-4" icon="solar:settings-linear"></iconify-icon>
+                        <p class="font-semibold text-stone-900 mb-1">Adaptação a contextos específicos</p>
+                        <p class="text-sm text-stone-500">Cada cliente tem realidade própria.</p>
+                    </div>
+                </div>
+                <span class="text-xs font-mono uppercase text-stone-400 block mb-6">Programas executivos complementares</span>
+                <h3 class="text-xl md:text-2xl font-medium tracking-tighter text-stone-900 mb-6">Implantação <span class="text-teal-600">completa</span> de <span class="text-teal-600">processos</span> e treinamento.</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex items-start gap-4 border border-stone-300 border-l-4 border-l-teal-600 rounded-lg p-6 bg-white">
+                        <div class="w-14 h-14 rounded-full border-2 border-teal-100 flex items-center justify-center shrink-0 bg-white">
+                            <iconify-icon class="text-2xl text-teal-600" icon="solar:checklist-linear"></iconify-icon>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-stone-900 mb-1">Implementação de processo</p>
+                            <p class="text-sm text-stone-500">E treinamento de equipe.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 border border-stone-300 border-l-4 border-l-teal-600 rounded-lg p-6 bg-white">
+                        <div class="w-14 h-14 rounded-full border-2 border-teal-100 flex items-center justify-center shrink-0 bg-white">
+                            <iconify-icon class="text-2xl text-teal-600" icon="solar:book-2-linear"></iconify-icon>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-stone-900 mb-1">Reforma Tributária</p>
+                            <p class="text-sm text-stone-500">Programa executivo dedicado.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 border border-stone-300 border-l-4 border-l-teal-600 rounded-lg p-6 bg-white">
+                        <div class="w-14 h-14 rounded-full border-2 border-teal-100 flex items-center justify-center shrink-0 bg-white">
+                            <iconify-icon class="text-2xl text-teal-600" icon="solar:calculator-linear"></iconify-icon>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-stone-900 mb-1">Estruturação econômico-financeira</p>
+                            <p class="text-sm text-stone-500">De projetos imobiliários.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 border border-stone-300 border-l-4 border-l-teal-600 rounded-lg p-6 bg-white">
+                        <div class="w-14 h-14 rounded-full border-2 border-teal-100 flex items-center justify-center shrink-0 bg-white">
+                            <iconify-icon class="text-2xl text-teal-600" icon="solar:users-group-two-rounded-linear"></iconify-icon>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-stone-900 mb-1">Apoio em comitês</p>
+                            <p class="text-sm text-stone-500">Consultoria para decisões.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center text-teal-600 italic mt-10">Possíveis serviços complementares.</p>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 09 — PROVA SOCIAL -->
+        <!-- ============================================================ -->
+        <section class="relative z-10 border-b border-stone-300 bg-gradient-to-br from-dark-900 to-dark-700" id="clientes">
+            <div class="p-8 md:p-12 border-b border-white/10 reveal">
+                <span class="text-xs font-mono uppercase text-teal-400 block mb-2">09 / Prova Social</span>
+                <h2 class="text-3xl md:text-5xl font-medium tracking-tighter text-white">Empresas estruturadas confiam no <span class="text-teal-400">RExSoft</span></h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3">
+                <div class="flashlight-card p-8 border-b md:border-b-0 md:border-r border-white/10 flex flex-col justify-between min-h-[220px] reveal"
+                    onmousemove="const r=this.getBoundingClientRect();this.style.setProperty('--mouse-x',(event.clientX-r.left)+'px');this.style.setProperty('--mouse-y',(event.clientY-r.top)+'px');">
+                    <p class="text-white text-lg leading-relaxed relative z-10">"Você tem como obrigação fazer a viabilidade"</p>
+                    <div class="flex items-center justify-between mt-8 relative z-10">
+                        <div>
+                            <p class="text-white font-semibold text-sm">Carlos</p>
+                            <p class="text-stone-400 text-xs">Vice Presidente — Grupo CAP</p>
+                        </div>
+                        <img alt="Logo Carlos" class="h-14 object-contain bg-white rounded px-2 py-1" src="assets/img/logos/logo-grupocap.png" />
+                    </div>
+                </div>
+                <div class="flashlight-card p-8 border-b md:border-b-0 md:border-r border-white/10 flex flex-col justify-between min-h-[220px] reveal delay-150"
+                    onmousemove="const r=this.getBoundingClientRect();this.style.setProperty('--mouse-x',(event.clientX-r.left)+'px');this.style.setProperty('--mouse-y',(event.clientY-r.top)+'px');">
+                    <p class="text-white text-lg leading-relaxed relative z-10">"Era exatamente o que precisava"</p>
+                    <div class="flex items-center justify-between mt-8 relative z-10">
+                        <div>
+                            <p class="text-white font-semibold text-sm">Marco Hollatz</p>
+                            <p class="text-stone-400 text-xs">Diretor — Salas Construtora</p>
+                        </div>
+                        <img alt="Logo Marco Hollatz" class="h-14 object-contain bg-white rounded px-2 py-1" src="assets/img/logos/logo-salas.png" />
+                    </div>
+                </div>
+                <div class="flashlight-card p-8 flex flex-col justify-between min-h-[220px] reveal delay-300"
+                    onmousemove="const r=this.getBoundingClientRect();this.style.setProperty('--mouse-x',(event.clientX-r.left)+'px');this.style.setProperty('--mouse-y',(event.clientY-r.top)+'px');">
+                    <p class="text-white text-lg leading-relaxed relative z-10">"Achei o máximo, super fácil, super intuitivo"</p>
+                    <div class="flex items-center justify-between mt-8 relative z-10">
+                        <div>
+                            <p class="text-white font-semibold text-sm">Gabriella</p>
+                            <p class="text-stone-400 text-xs">Planejamento de Obras — MBigucci</p>
+                        </div>
+                        <img alt="Logo Gabriella" class="h-14 object-contain bg-white rounded px-2 py-1" src="assets/img/logos/logo-mbigucci.png" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 grid grid-cols-1 lg:grid-cols-[320px_1fr] gap-10 p-8 md:p-12 items-center">
+                <div class="reveal flex justify-center lg:justify-start">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/10" style="width:260px;height:462px;">
+                        <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/y-NQdUUycxE" title="Depoimento RExSoft"></iframe>
+                    </div>
+                </div>
+                <div class="reveal delay-200">
+                    <span class="text-xs font-mono uppercase text-teal-400 block mb-2">Autoridade e Confiança</span>
+                    <p class="text-stone-300 leading-relaxed max-w-xl mb-8">Mais de 1.000 usuários entre incorporadoras, loteadoras e gestores de todo o Brasil já profissionalizaram sua análise de viabilidade.</p>
+                    <div class="border-t border-white/10 pt-6 overflow-hidden">
+                        <div class="marquee-container">
+                            <div class="marquee-content marquee-fast">
+                                <img alt="Logo cliente" class="h-16 mx-4 object-contain bg-white rounded px-3 py-1.5" src="assets/img/logos/logo-artesano.png" />
+                                <img alt="Logo cliente" class="h-16 mx-4 object-contain bg-white rounded px-3 py-1.5" src="assets/img/logos/logo-gp.png" />
+                                <img alt="Logo cliente" class="h-16 mx-4 object-contain bg-white rounded px-3 py-1.5" src="assets/img/logos/logo-grupocap-2.png" />
+                                <img alt="Logo cliente" class="h-16 mx-4 object-contain bg-white rounded px-3 py-1.5" src="assets/img/logos/logo-guerini-2.png" />
+                                <img alt="Logo cliente" class="h-16 mx-4 object-contain bg-white rounded px-3 py-1.5" src="assets/img/logos/logo-salas.png" />
+                                <img alt="Logo cliente" class="h-16 mx-4 object-contain bg-white rounded px-3 py-1.5" src="assets/img/logos/logo-mbigucci-2.png" />
+                                <img alt="Logo cliente" class="h-16 mx-4 object-contain bg-white rounded px-3 py-1.5" src="assets/img/logos/logo-sanmarino.png" />
+                                <img alt="Logo cliente" class="h-16 mx-4 object-contain bg-white rounded px-3 py-1.5" src="assets/img/logos/logo-tenda.png" />
+                            </div>
+                            <div class="marquee-content marquee-fast">
+                                <img alt="Logo cliente" class="h-16 mx-4 object-contain bg-white rounded px-3 py-1.5" src="assets/img/logos/logo-artesano.png" />
+                                <img alt="Logo cliente" class="h-16 mx-4 object-contain bg-white rounded px-3 py-1.5" src="assets/img/logos/logo-gp.png" />
+                                <img alt="Logo cliente" class="h-16 mx-4 object-contain bg-white rounded px-3 py-1.5" src="assets/img/logos/logo-grupocap-2.png" />
+                                <img alt="Logo cliente" class="h-16 mx-4 object-contain bg-white rounded px-3 py-1.5" src="assets/img/logos/logo-guerini-2.png" />
+                                <img alt="Logo cliente" class="h-16 mx-4 object-contain bg-white rounded px-3 py-1.5" src="assets/img/logos/logo-salas.png" />
+                                <img alt="Logo cliente" class="h-16 mx-4 object-contain bg-white rounded px-3 py-1.5" src="assets/img/logos/logo-mbigucci-2.png" />
+                                <img alt="Logo cliente" class="h-16 mx-4 object-contain bg-white rounded px-3 py-1.5" src="assets/img/logos/logo-sanmarino.png" />
+                                <img alt="Logo cliente" class="h-16 mx-4 object-contain bg-white rounded px-3 py-1.5" src="assets/img/logos/logo-tenda.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 10 — OS SÓCIOS -->
+        <!-- ============================================================ -->
+        <section class="relative z-10 border-b border-stone-300 bg-stone-100/40" id="os-socios">
+            <div class="p-8 md:p-12 border-b border-stone-300 bg-stone-100/50 reveal">
+                <span class="text-xs font-mono uppercase text-teal-600 block mb-2">10 / Os Sócios</span>
+                <h2 class="text-3xl md:text-5xl font-medium tracking-tighter text-stone-900">Quem está por trás do RExSoft</h2>
+            </div>
+            <div class="p-8 md:p-12 reveal">
+                <div class="flex flex-wrap justify-center gap-3 mb-8">
+                    <a class="inline-flex items-center gap-2 text-sm font-bold px-4 py-2 rounded-full bg-white border border-stone-300 text-stone-700 hover:bg-teal-600 hover:border-teal-600 hover:text-white transition-colors" href="https://www.linkedin.com/in/andre-b-n-resende-2420181b0/" rel="noopener noreferrer" target="_blank">André Resende</a>
+                    <a class="inline-flex items-center gap-2 text-sm font-bold px-4 py-2 rounded-full bg-white border border-stone-300 text-stone-700 hover:bg-teal-600 hover:border-teal-600 hover:text-white transition-colors" href="https://www.linkedin.com/in/antonio-jorge-abrah%C3%A3o-j%C3%BAnior-62060617/" rel="noopener noreferrer" target="_blank">Antonio Abrahão Jr.</a>
+                    <a class="inline-flex items-center gap-2 text-sm font-bold px-4 py-2 rounded-full bg-white border border-stone-300 text-stone-700 hover:bg-teal-600 hover:border-teal-600 hover:text-white transition-colors" href="https://www.linkedin.com/in/caio-pinheiro-zu%C3%B1iga-b71247149/" rel="noopener noreferrer" target="_blank">Caio Zuniga</a>
+                    <a class="inline-flex items-center gap-2 text-sm font-bold px-4 py-2 rounded-full bg-white border border-stone-300 text-stone-700 hover:bg-teal-600 hover:border-teal-600 hover:text-white transition-colors" href="https://br.linkedin.com/in/giuliano-tognetti-09214511" rel="noopener noreferrer" target="_blank">Giuliano Tognetti</a>
+                    <a class="inline-flex items-center gap-2 text-sm font-bold px-4 py-2 rounded-full bg-white border border-stone-300 text-stone-700 hover:bg-teal-600 hover:border-teal-600 hover:text-white transition-colors" href="https://br.linkedin.com/in/guilherme-lapo-b468a02a" rel="noopener noreferrer" target="_blank">Guilherme Lapo</a>
+                </div>
+                <div class="relative rounded-lg overflow-hidden border border-stone-300 shadow-sm">
+                    <img alt="Sócios RExperts" class="w-full h-auto" src="assets/img/photos/banner-socios.jpg" />
+                    <div class="absolute inset-0 flex items-center p-8 md:p-16">
+                        <p class="text-white text-lg md:text-2xl leading-relaxed max-w-[45%] text-center [text-shadow:0_2px_8px_rgba(0,0,0,0.6)]">O RExSoft não é só um software. É a forma mais segura de tomar decisões de investimento imobiliário quando muito recurso está em jogo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 11 — NOSSA HISTÓRIA -->
+        <!-- ============================================================ -->
+        <section class="relative z-10 border-b border-stone-300 bg-white">
+            <div class="p-8 md:p-12 border-b border-stone-300 bg-stone-100/50 reveal">
+                <span class="text-xs font-mono uppercase text-teal-600 block mb-2">11 / Nossa História</span>
+                <div class="flex items-center gap-4">
+                    <h2 class="text-3xl md:text-5xl font-medium tracking-tighter text-stone-900">Por que criamos o RExSoft</h2>
+                    <span class="hidden sm:inline-flex items-center bg-dark-900 rounded-lg px-3 py-1.5">
+                        <img alt="RExSoft" class="h-6 w-auto" src="assets/img/logos/logo-branca.png" />
+                    </span>
+                </div>
+            </div>
+            <div class="p-8 md:p-12 space-y-6 reveal">
+                <p class="text-stone-700 leading-relaxed">Nós vimos de perto o que acontece quando uma empresa perde um negócio de <strong class="text-stone-900">50 milhões</strong> porque a análise demorou três semanas.</p>
+                <p class="text-stone-700 leading-relaxed">Vimos sócios brigando em reuniões porque cada um tinha uma versão diferente da planilha de viabilidade. Vimos diretores perdendo o sono com medo de aprovar um projeto baseado em números que ninguém conseguia auditar de verdade.</p>
+                <p class="text-stone-700 leading-relaxed">O problema não era falta de competência. Era <strong class="text-stone-900">a ferramenta errada para um trabalho crítico.</strong></p>
+                <p class="text-stone-700 leading-relaxed">Planilhas foram feitas para listas e cálculos simples. Não para gerenciar o risco de grandes investimentos. Uma fórmula errada escondida em uma aba. Um vínculo quebrado. Uma premissa desatualizada. Qualquer um desses erros pode custar muito e ninguém percebe até ser tarde demais.</p>
+                <p class="text-stone-700 leading-relaxed">Pior ainda: cada analista criava sua própria versão da planilha. Não havia padrão. Não havia como comparar um loteamento com uma incorporação usando a mesma régua. E quando chegava a hora de apresentar para o comitê de investimentos ou para um banco, os relatórios eram inconsistentes.</p>
+                <blockquote class="border-l-4 border-teal-600 bg-stone-100/60 pl-6 py-4 text-stone-800 italic text-lg">"Foi quando decidimos resolver isso de uma vez."</blockquote>
+                <img alt="Plataforma RExSoft" class="w-full h-auto rounded-lg border border-stone-300 shadow-sm" src="assets/img/photos/rexsoft-plataforma.jpg" />
+                <p class="text-stone-700 leading-relaxed">Pegamos toda a metodologia que a RExperts usa em suas consultorias estratégicas. Cada premissa. Cada indicador. Cada cálculo validado em projetos reais de centenas de milhões de reais.</p>
+                <p class="text-stone-700 leading-relaxed">Transformamos isso em um sistema onde o erro humano simplesmente não consegue entrar. Onde você insere os dados do projeto e recebe uma análise blindada. Onde todos os empreendimentos são avaliados com a mesma disciplina financeira que os grandes fundos de investimento exigem.</p>
+            </div>
+            <div class="p-8 md:p-12 border-t border-stone-300 reveal">
+                <h3 class="text-xl md:text-2xl font-medium tracking-tighter text-stone-900 mb-8">Há <span class="text-teal-600">mais de uma década</span> consolidando nossa referência no mercado imobiliário.</h3>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
+                    <div class="rounded-lg overflow-hidden border border-stone-300 shadow-sm">
+                        <div class="aspect-video">
+                            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Rs8DVXbBgyU" title="Vídeo institucional do RExperts"></iframe>
+                        </div>
+                        <p class="text-sm text-stone-600 p-3 bg-white border-t border-stone-300">Vídeo institucional do RExperts</p>
+                    </div>
+                    <div class="rounded-lg overflow-hidden border border-stone-300 shadow-sm">
+                        <div class="aspect-video">
+                            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/YCaLx0Dcwnw" title="Depoimentos de clientes RExperts"></iframe>
+                        </div>
+                        <p class="text-sm text-stone-600 p-3 bg-white border-t border-stone-300">Resultados que falam por si</p>
+                    </div>
+                </div>
+                <p class="text-stone-700 leading-relaxed mb-14">Ao longo dos seus <strong>mais de 10 anos</strong>, o RExperts consolidou atuação recorrente em projetos que exigem integração entre estratégia, viabilidade econômico-financeira, leitura técnica, governança e negociação, apoiando clientes em decisões de alto impacto no mercado imobiliário. Em sua trajetória, o RExperts atendeu mais de 150 clientes e entregou mais de 250 projetos de <strong>consultoria e advisory</strong> no mercado imobiliário, o que se traduz em <strong>+R$ 20 bilhões em VGV estruturados</strong>.</p>
+
+                <!-- Timeline — desktop -->
+                <div class="hidden md:grid" style="grid-template-columns: repeat(6, 1fr); grid-template-rows: auto auto auto;">
+                    <div class="flex flex-col items-center justify-end text-center px-2" style="grid-column: 1; grid-row: 1;"></div>
+                    <div class="flex items-center justify-center px-2" style="grid-column: 1; grid-row: 2;"><span class="w-3 h-3 rounded-full bg-teal-600 shrink-0"></span></div>
+                    <div class="flex flex-col items-center text-center px-2 pt-3" style="grid-column: 1; grid-row: 3;">
+                        <span class="font-mono font-bold text-teal-600 mb-1">2015</span>
+                        <p class="text-xs text-stone-600 leading-snug">Nasce o RExperts, com foco em Educação em Real Estate</p>
+                    </div>
+
+                    <div class="flex flex-col items-center justify-end text-center px-2 pb-3" style="grid-column: 2; grid-row: 1;">
+                        <span class="font-mono font-bold text-teal-600 mb-1">2016</span>
+                        <p class="text-xs text-stone-600 leading-snug">A empresa passa a oferecer serviços em Consultoria para Projetos Imobiliários</p>
+                    </div>
+                    <div class="flex items-center justify-center px-2" style="grid-column: 2; grid-row: 2;"><span class="w-3 h-3 rounded-full bg-teal-600 shrink-0"></span></div>
+                    <div class="px-2" style="grid-column: 2; grid-row: 3;"></div>
+
+                    <div class="flex flex-col items-center justify-end text-center px-2" style="grid-column: 3; grid-row: 1;"></div>
+                    <div class="flex items-center justify-center px-2" style="grid-column: 3; grid-row: 2;"><span class="w-3 h-3 rounded-full bg-teal-600 shrink-0"></span></div>
+                    <div class="flex flex-col items-center text-center px-2 pt-3" style="grid-column: 3; grid-row: 3;">
+                        <span class="font-mono font-bold text-teal-600 mb-1">2023</span>
+                        <p class="text-xs text-stone-600 leading-snug">RExperts se consolida como referência no mercado imobiliário, com consultoria estratégica e advisory de grandes negócios</p>
+                    </div>
+
+                    <div class="flex flex-col items-center justify-end text-center px-2 pb-3" style="grid-column: 4; grid-row: 1;">
+                        <span class="font-mono font-bold text-teal-600 mb-1">2024</span>
+                        <p class="text-xs text-stone-600 leading-snug">Surge a ideia de criar um processo de viabilidade em Real Estate para o mercado, com a mesma metodologia usada pela equipe interna do RExperts. E o RExSoft passa a ser desenvolvido</p>
+                    </div>
+                    <div class="flex items-center justify-center px-2" style="grid-column: 4; grid-row: 2;"><span class="w-3 h-3 rounded-full bg-teal-600 shrink-0"></span></div>
+                    <div class="px-2" style="grid-column: 4; grid-row: 3;"></div>
+
+                    <div class="flex flex-col items-center justify-end text-center px-2" style="grid-column: 5; grid-row: 1;"></div>
+                    <div class="flex items-center justify-center px-2" style="grid-column: 5; grid-row: 2;"><span class="w-3 h-3 rounded-full bg-teal-600 shrink-0"></span></div>
+                    <div class="flex flex-col items-center text-center px-2 pt-3" style="grid-column: 5; grid-row: 3;">
+                        <span class="font-mono font-bold text-teal-600 mb-1">2025</span>
+                        <p class="text-xs text-stone-600 leading-snug">RExSoft é lançado ao mercado</p>
+                    </div>
+
+                    <div class="flex flex-col items-center justify-end text-center px-2 pb-3" style="grid-column: 6; grid-row: 1;">
+                        <span class="font-mono font-bold text-teal-600 mb-1">2026</span>
+                        <p class="text-xs text-stone-600 leading-snug">RExSoft atinge a marca de +1000 usuários. Nova mecânica da reforma tributária é implementada</p>
+                    </div>
+                    <div class="flex items-center justify-center px-2" style="grid-column: 6; grid-row: 2;"><span class="w-3 h-3 rounded-full bg-teal-600 shrink-0"></span></div>
+                    <div class="px-2" style="grid-column: 6; grid-row: 3;"></div>
+
+                    <div class="flex items-center" style="grid-column: 1 / -1; grid-row: 2;"><div class="h-px w-full bg-stone-300 -z-10"></div></div>
+                </div>
+
+                <!-- Timeline — mobile -->
+                <div class="md:hidden space-y-6 relative pl-6">
+                    <div class="absolute left-[7px] top-1 bottom-1 w-px bg-stone-300"></div>
+                    <div class="relative">
+                        <span class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-teal-600"></span>
+                        <span class="font-mono font-bold text-teal-600 block mb-1">2015</span>
+                        <p class="text-sm text-stone-600 leading-relaxed">Nasce o RExperts, com foco em Educação em Real Estate</p>
+                    </div>
+                    <div class="relative">
+                        <span class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-teal-600"></span>
+                        <span class="font-mono font-bold text-teal-600 block mb-1">2016</span>
+                        <p class="text-sm text-stone-600 leading-relaxed">A empresa passa a oferecer serviços em Consultoria para Projetos Imobiliários</p>
+                    </div>
+                    <div class="relative">
+                        <span class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-teal-600"></span>
+                        <span class="font-mono font-bold text-teal-600 block mb-1">2023</span>
+                        <p class="text-sm text-stone-600 leading-relaxed">RExperts se consolida como referência no mercado imobiliário, com consultoria estratégica e advisory de grandes negócios</p>
+                    </div>
+                    <div class="relative">
+                        <span class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-teal-600"></span>
+                        <span class="font-mono font-bold text-teal-600 block mb-1">2024</span>
+                        <p class="text-sm text-stone-600 leading-relaxed">Surge a ideia de criar um processo de viabilidade em Real Estate para o mercado, com a mesma metodologia usada pela equipe interna do RExperts. E o RExSoft passa a ser desenvolvido</p>
+                    </div>
+                    <div class="relative">
+                        <span class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-teal-600"></span>
+                        <span class="font-mono font-bold text-teal-600 block mb-1">2025</span>
+                        <p class="text-sm text-stone-600 leading-relaxed">RExSoft é lançado ao mercado</p>
+                    </div>
+                    <div class="relative">
+                        <span class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-teal-600"></span>
+                        <span class="font-mono font-bold text-teal-600 block mb-1">2026</span>
+                        <p class="text-sm text-stone-600 leading-relaxed">RExSoft atinge a marca de +1000 usuários. Nova mecânica da reforma tributária é implementada</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 12 — O INVESTIMENTO -->
+        <!-- ============================================================ -->
+        <section class="relative z-10 border-b border-stone-300 bg-gradient-to-br from-dark-900 to-dark-700 bg-grid" id="preco">
+            <div class="noise"></div>
+            <div class="relative z-10 p-8 md:p-12 border-b border-white/10 text-center reveal">
+                <span class="text-xs font-mono uppercase text-teal-400 block mb-2">12 / O Investimento</span>
+                <h2 class="text-3xl md:text-5xl font-medium tracking-tighter text-white mb-4">Tudo que você precisa para profissionalizar sua análise de viabilidade</h2>
+                <p class="inline-flex items-center gap-2 text-amber-400 text-sm font-medium">
+                    <iconify-icon icon="solar:danger-triangle-bold"></iconify-icon>
+                    Apenas <strong class="text-white">9 vagas disponíveis</strong>&nbsp;este mês para garantir suporte dedicado e onboarding personalizado.
+                </p>
+            </div>
+            <div class="relative z-10 p-8 md:p-16 flex justify-center reveal delay-200">
+                <div class="w-full max-w-lg bg-white rounded-2xl shadow-2xl overflow-hidden">
+                    <div class="p-8 md:p-10 border-b border-stone-200 text-center">
+                        <span class="inline-flex items-center gap-1.5 text-[11px] font-bold px-3 py-1 rounded-full bg-amber-100 text-amber-700 uppercase tracking-wide mb-4">
+                            <iconify-icon icon="solar:medal-star-bold-duotone"></iconify-icon> Mais Escolhido
+                        </span>
+                        <p class="text-sm font-medium text-stone-500 mb-1">Plano Pró Enterprise</p>
+                        <h3 class="text-2xl font-semibold text-stone-900 mb-3">Condições Especiais</h3>
+                        <p class="text-stone-500 text-sm">Entre em contato para saber o investimento</p>
+                    </div>
+                    <div class="p-8 md:p-10">
+                        <span class="text-xs font-mono uppercase tracking-widest text-stone-400 block mb-4">O que está incluído</span>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start gap-3"><iconify-icon class="text-lg text-teal-600 mt-0.5" icon="solar:check-circle-bold"></iconify-icon><span class="text-sm text-stone-700">Análise completa de 1 projeto "estudo de caso" da sua empresa</span></li>
+                            <li class="flex items-start gap-3"><iconify-icon class="text-lg text-teal-600 mt-0.5" icon="solar:check-circle-bold"></iconify-icon><span class="text-sm text-stone-700">12 meses de acesso ilimitado à plataforma RExSoft</span></li>
+                            <li class="flex items-start gap-3"><iconify-icon class="text-lg text-teal-600 mt-0.5" icon="solar:check-circle-bold"></iconify-icon><span class="text-sm text-stone-700">Acesso aos tutoriais da plataforma</span></li>
+                            <li class="flex items-start gap-3"><iconify-icon class="text-lg text-teal-600 mt-0.5" icon="solar:check-circle-bold"></iconify-icon><span class="text-sm text-stone-700">Mais de 3 usuários</span></li>
+                            <li class="flex items-start gap-3"><iconify-icon class="text-lg text-teal-600 mt-0.5" icon="solar:check-circle-bold"></iconify-icon><span class="text-sm text-stone-700">Projetos ilimitados</span></li>
+                            <li class="flex items-start gap-3"><iconify-icon class="text-lg text-teal-600 mt-0.5" icon="solar:check-circle-bold"></iconify-icon><span class="text-sm text-stone-700">Treinamento onboarding personalizado para sua equipe</span></li>
+                            <li class="flex items-start gap-3"><iconify-icon class="text-lg text-teal-600 mt-0.5" icon="solar:check-circle-bold"></iconify-icon><span class="text-sm text-stone-700">Reunião de kick-off do projeto alvo com especialistas</span></li>
+                            <li class="flex items-start gap-3"><iconify-icon class="text-lg text-teal-600 mt-0.5" icon="solar:check-circle-bold"></iconify-icon><span class="text-sm text-stone-700">Reunião de apresentação de resultados e ajustes</span></li>
+                            <li class="flex items-start gap-3"><iconify-icon class="text-lg text-teal-600 mt-0.5" icon="solar:check-circle-bold"></iconify-icon><span class="text-sm font-semibold text-stone-900">Treinamento de equipe com processo de novos negócios</span></li>
+                            <li class="flex items-start gap-3"><iconify-icon class="text-lg text-teal-600 mt-0.5" icon="solar:check-circle-bold"></iconify-icon><span class="text-sm font-semibold text-stone-900">Consultoria de acompanhamento em projetos com especialistas</span></li>
+                            <li class="flex items-start gap-3"><iconify-icon class="text-lg text-teal-600 mt-0.5" icon="solar:check-circle-bold"></iconify-icon><span class="text-sm text-stone-700">Suporte dedicado via WhatsApp e e-mail</span></li>
+                        </ul>
+                        <div class="bg-amber-100/60 rounded-lg p-5 mb-8">
+                            <span class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-amber-700 mb-3"><iconify-icon icon="solar:gift-bold-duotone"></iconify-icon> Bônus exclusivos</span>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-3"><iconify-icon class="text-lg text-amber-700 mt-0.5" icon="solar:star-bold"></iconify-icon><span class="text-sm text-stone-700">Acesso ao Real Estate Academy com cursos para treinamento interno</span></li>
+                                <li class="flex items-start gap-3"><iconify-icon class="text-lg text-amber-700 mt-0.5" icon="solar:star-bold"></iconify-icon><span class="text-sm text-stone-700">Curso completo "Decodificando a Reforma Tributária"</span></li>
+                                <li class="flex items-start gap-3"><iconify-icon class="text-lg text-amber-700 mt-0.5" icon="solar:star-bold"></iconify-icon><span class="text-sm text-stone-700">Livros "Real Estate no Brasil" e "Investing in Brazilian Real Estate"</span></li>
+                            </ul>
+                        </div>
+                        <a class="w-full flex items-center justify-center gap-2 px-6 py-4 bg-teal-600 text-white rounded-md text-sm font-semibold uppercase tracking-wide hover:bg-teal-700 active:bg-teal-800 transition-all group" href="https://api.whatsapp.com/send/?phone=5511934719414&amp;text=Ol%C3%A1+gostaria+de+informa%C3%A7%C3%B5es+sobre+o+APP_RExSoft.&amp;type=phone_number&amp;app_absent=0" rel="noopener noreferrer" target="_blank">
+                            Quero Profissionalizar Minha Análise
+                            <iconify-icon class="text-lg group-hover:translate-x-1 transition-transform" icon="solar:arrow-right-linear"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative z-10 p-8 md:p-16 pt-0 flex justify-center reveal delay-300">
+                <div class="w-full max-w-lg bg-white rounded-2xl shadow-2xl overflow-hidden">
+                    <div class="grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-6 p-8 md:p-10 items-center">
+                        <div class="flex justify-center">
+                            <div class="relative w-32 h-32 rounded-full border-4 border-teal-100 flex flex-col items-center justify-center bg-teal-600/5 shrink-0">
+                                <iconify-icon class="text-2xl text-teal-600 mb-1" icon="solar:shield-check-bold-duotone"></iconify-icon>
+                                <span class="text-3xl font-semibold text-stone-900 leading-none">7</span>
+                                <span class="text-xs font-mono uppercase tracking-widest text-stone-500">dias</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl md:text-2xl font-medium tracking-tighter text-stone-900 mb-3">Garantia blindada de precisão absoluta</h3>
+                            <p class="text-stone-700 text-sm leading-relaxed mb-2">Use o RExSoft por <strong class="text-stone-900">7 dias completos</strong>. Analise seus projetos. Compare com suas planilhas atuais. Apresente os relatórios para seu comitê.</p>
+                            <p class="text-stone-700 text-sm leading-relaxed mb-4">Se você nos apresentar um relatório auditado demonstrando que uma análise feita em planilha manual se provou mais precisa e segura que nossa plataforma, <strong class="text-stone-900">devolvemos 100% do seu investimento.</strong></p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded bg-green-100 text-green-500"><iconify-icon icon="solar:check-circle-bold"></iconify-icon> Sem perguntas</span>
+                                <span class="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded bg-green-100 text-green-500"><iconify-icon icon="solar:check-circle-bold"></iconify-icon> Sem burocracia</span>
+                                <span class="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded bg-green-100 text-green-500"><iconify-icon icon="solar:check-circle-bold"></iconify-icon> Você não tem nada a perder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 13 — VISÃO DE FUTURO -->
+        <!-- ============================================================ -->
+        <section class="relative z-10 border-b border-stone-300 bg-stone-100/40">
+            <div class="p-8 md:p-12 border-b border-stone-300 bg-stone-100/50 reveal text-center">
+                <span class="text-xs font-mono uppercase text-teal-600 block mb-2">13 / Visão de Futuro</span>
+                <h2 class="text-3xl md:text-5xl font-medium tracking-tighter text-stone-900 max-w-3xl mx-auto">O futuro da sua empresa começa com a decisão de hoje</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="p-8 md:p-12 border-b md:border-b-0 md:border-r border-stone-300 bg-teal-50/40 reveal">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center"><iconify-icon class="text-lg text-teal-600" icon="solar:sun-bold-duotone"></iconify-icon></div>
+                        <p class="font-semibold text-stone-900">Com o RExSoft — Daqui a 12 meses</p>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3"><span class="text-teal-600 mt-0.5">✦</span><span class="text-stone-700 text-sm leading-relaxed">Você apresenta 3 oportunidades com relatórios completos. O comitê aprova dois na mesma reunião.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-teal-600 mt-0.5">✦</span><span class="text-stone-700 text-sm leading-relaxed">Sua equipe analisa o dobro de terrenos. Sem horas extras. Sem retrabalho.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-teal-600 mt-0.5">✦</span><span class="text-stone-700 text-sm leading-relaxed">Bancos e fundos te procuram porque seus números são sólidos.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-teal-600 mt-0.5">✦</span><span class="text-stone-700 text-sm leading-relaxed">Captação de recursos mais rápida e mais barata.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-teal-600 mt-0.5">✦</span><span class="text-stone-700 text-sm leading-relaxed">Você chega em casa mais cedo, com a tranquilidade de quem mitigou os riscos.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-teal-600 mt-0.5">✦</span><span class="text-stone-700 text-sm leading-relaxed">Sua empresa se torna referência no mercado pela disciplina financeira.</span></li>
+                    </ul>
+                </div>
+                <div class="p-8 md:p-12 bg-stone-200/30 reveal delay-200">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-full bg-stone-300/60 flex items-center justify-center"><iconify-icon class="text-lg text-stone-600" icon="solar:moon-bold-duotone"></iconify-icon></div>
+                        <p class="font-semibold text-stone-900">Sem o RExSoft — O outro lado</p>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3"><span class="text-red-600 mt-0.5">✗</span><span class="text-stone-600 text-sm leading-relaxed">Ainda dependendo das mesmas planilhas frágeis.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-red-600 mt-0.5">✗</span><span class="text-stone-600 text-sm leading-relaxed">Ainda perdendo terrenos bons porque a análise demorou demais.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-red-600 mt-0.5">✗</span><span class="text-stone-600 text-sm leading-relaxed">Ainda passando noites acordado se perguntando se esqueceu alguma premissa.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-red-600 mt-0.5">✗</span><span class="text-stone-600 text-sm leading-relaxed">Seus concorrentes usando ferramentas profissionais e fechando os melhores negócios.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-red-600 mt-0.5">✗</span><span class="text-stone-600 text-sm leading-relaxed">O custo de um único erro pode ser devastador.</span></li>
+                        <li class="flex items-start gap-3"><span class="text-red-600 mt-0.5">✗</span><span class="text-stone-600 text-sm leading-relaxed">O mercado não espera. As oportunidades não voltam.</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="p-8 md:p-16 text-center border-t border-stone-300 reveal delay-300">
+                <p class="text-lg text-stone-700 mb-2">A pergunta não é <em>se</em> você precisa profissionalizar sua análise de viabilidade.</p>
+                <p class="text-lg text-stone-900 font-semibold mb-8">A pergunta é: quanto tempo você ainda vai esperar para fazer isso?</p>
+                <a class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-teal-600 text-white rounded-md text-sm font-semibold uppercase tracking-wide hover:bg-teal-700 transition-all group" href="https://app.rexsoft.com.br/Auth/RegisterBasic">
+                    Crie Seu Usuário Gratuito e Teste 1 Projeto
+                    <iconify-icon class="text-lg group-hover:translate-x-1 transition-transform" icon="solar:arrow-right-linear"></iconify-icon>
+                </a>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 14 — DÚVIDAS E FAQ -->
+        <!-- ============================================================ -->
+        <section class="relative z-10 border-b border-stone-300 bg-white" id="faq">
+            <div class="p-8 md:p-12 border-b border-stone-300 bg-stone-100/50 reveal">
+                <span class="text-xs font-mono uppercase text-teal-600 block mb-2">14 / Dúvidas e Perguntas Frequentes</span>
+                <h2 class="text-3xl md:text-5xl font-medium tracking-tighter text-stone-900">Antes de começar, vamos resolver suas últimas preocupações</h2>
+            </div>
+            <div class="divide-y divide-stone-300" id="objections-accordion">
+                <div>
+                    <button class="w-full flex items-center gap-4 p-6 md:p-8 text-left hover:bg-stone-100/50 transition-colors" data-accordion-trigger type="button">
+                        <iconify-icon class="text-xl text-teal-600 shrink-0" icon="solar:widget-2-bold-duotone"></iconify-icon>
+                        <span class="flex-1 font-medium text-stone-900">Minha planilha funciona há anos. Por que mudar agora?</span>
+                        <iconify-icon class="text-xl text-stone-400 shrink-0" data-chevron icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    </button>
+                    <div class="hidden px-6 md:px-8 pb-6 pl-14 md:pl-14" data-accordion-panel>
+                        <p class="text-sm text-stone-600 leading-relaxed">Entendo. Você construiu um processo que te trouxe até aqui. Mas pense nisso: o mercado de hoje exige velocidade e padronização que planilhas simplesmente não conseguem entregar. Cada minuto perdido conferindo fórmulas é um minuto que você poderia estar prospectando o próximo grande negócio. O RExSoft não substitui sua experiência, ele a potencializa. Você continua tomando as decisões estratégicas, mas agora com a segurança de dados blindados contra erros.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="w-full flex items-center gap-4 p-6 md:p-8 text-left hover:bg-stone-100/50 transition-colors" data-accordion-trigger type="button">
+                        <iconify-icon class="text-xl text-teal-600 shrink-0" icon="solar:repeat-bold-duotone"></iconify-icon>
+                        <span class="flex-1 font-medium text-stone-900">Eu já utilizo outro software para análise das minhas viabilidades. Por que mudar para o RExSoft?</span>
+                        <iconify-icon class="text-xl text-stone-400 shrink-0" data-chevron icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    </button>
+                    <div class="hidden px-6 md:px-8 pb-6 pl-14 md:pl-14" data-accordion-panel>
+                        <p class="text-sm text-stone-600 leading-relaxed">Entendemos a resistência em trocar de ferramenta. A diferença é que o RExSoft foi construído numa plataforma moderna e tecnológica, já com a reforma tributária incorporada aos cálculos — e não por programadores isolados, mas por profissionais com anos de vivência no mercado imobiliário. É essa combinação de tecnologia e experiência prática que faz a diferença no resultado.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="w-full flex items-center gap-4 p-6 md:p-8 text-left hover:bg-stone-100/50 transition-colors" data-accordion-trigger type="button">
+                        <iconify-icon class="text-xl text-teal-600 shrink-0" icon="solar:layers-bold-duotone"></iconify-icon>
+                        <span class="flex-1 font-medium text-stone-900">E se isso não funcionar para o meu tipo específico de empreendimento?</span>
+                        <iconify-icon class="text-xl text-stone-400 shrink-0" data-chevron icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    </button>
+                    <div class="hidden px-6 md:px-8 pb-6 pl-14 md:pl-14" data-accordion-panel>
+                        <p class="text-sm text-stone-600 leading-relaxed">Essa é uma preocupação válida. Por isso desenvolvemos o sistema para atender desde loteamentos até galpões logísticos, incorporações e projetos de renda. A plataforma foi criada pela RExperts, que analisa todos esses tipos de projeto há anos em consultoria. Além disso, você tem o treinamento de onboarding focado no seu caso específico e nossa garantia de 7 dias. Se não atender suas necessidades, devolvemos seu investimento.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="w-full flex items-center gap-4 p-6 md:p-8 text-left hover:bg-stone-100/50 transition-colors" data-accordion-trigger type="button">
+                        <iconify-icon class="text-xl text-teal-600 shrink-0" icon="solar:clock-circle-bold-duotone"></iconify-icon>
+                        <span class="flex-1 font-medium text-stone-900">Não tenho tempo agora para implementar uma ferramenta nova.</span>
+                        <iconify-icon class="text-xl text-stone-400 shrink-0" data-chevron icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    </button>
+                    <div class="hidden px-6 md:px-8 pb-6 pl-14 md:pl-14" data-accordion-panel>
+                        <p class="text-sm text-stone-600 leading-relaxed">Eu te entendo. Mas aqui está a verdade: você está perdendo tempo todos os dias com o processo atual. Horas construindo planilhas, conferindo fórmulas, refazendo análises. O tempo de implementação do RExSoft se paga na primeira semana de uso. E nosso time de suporte te acompanha em cada etapa para garantir uma adoção rápida e sem dor de cabeça.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="w-full flex items-center gap-4 p-6 md:p-8 text-left hover:bg-stone-100/50 transition-colors" data-accordion-trigger type="button">
+                        <iconify-icon class="text-xl text-teal-600 shrink-0" icon="solar:calculator-bold-duotone"></iconify-icon>
+                        <span class="flex-1 font-medium text-stone-900">Como sei que os cálculos do software estão corretos?</span>
+                        <iconify-icon class="text-xl text-stone-400 shrink-0" data-chevron icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    </button>
+                    <div class="hidden px-6 md:px-8 pb-6 pl-14 md:pl-14" data-accordion-panel>
+                        <p class="text-sm text-stone-600 leading-relaxed">Desconfiança é saudável quando se trata de decisões milionárias. O RExSoft usa a mesma metodologia que a RExperts aplica em suas consultorias estratégicas para os maiores players do mercado. Cada fórmula foi validada por especialistas. Além disso, temos muitos vídeos tutoriais que explicam cada premissa e cálculo. Você tem total transparência sobre a origem de cada número.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="w-full flex items-center gap-4 p-6 md:p-8 text-left hover:bg-stone-100/50 transition-colors" data-accordion-trigger type="button">
+                        <iconify-icon class="text-xl text-teal-600 shrink-0" icon="solar:wallet-money-bold-duotone"></iconify-icon>
+                        <span class="flex-1 font-medium text-stone-900">O investimento não cabe no orçamento agora.</span>
+                        <iconify-icon class="text-xl text-stone-400 shrink-0" data-chevron icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    </button>
+                    <div class="hidden px-6 md:px-8 pb-6 pl-14 md:pl-14" data-accordion-panel>
+                        <p class="text-sm text-stone-600 leading-relaxed">Vamos colocar em perspectiva: uma única consultoria para análise de viabilidade custa no mínimo R$ 50 mil. Um erro em uma planilha pode custar alguns milhões. Perder um bom terreno por lentidão na análise tem um custo que você nem consegue mensurar. O RExSoft custa menos que o salário mensal de um analista júnior e te entrega a capacidade de analisar dezenas de projetos com precisão de banco de investimento. A pergunta não é se você tem orçamento, mas se você pode se dar ao luxo de continuar sem essa ferramenta.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="w-full flex items-center gap-4 p-6 md:p-8 text-left hover:bg-stone-100/50 transition-colors" data-accordion-trigger type="button">
+                        <iconify-icon class="text-xl text-teal-600 shrink-0" icon="solar:buildings-2-bold-duotone"></iconify-icon>
+                        <span class="flex-1 font-medium text-stone-900">O RExSoft funciona para qualquer tipo de empreendimento imobiliário?</span>
+                        <iconify-icon class="text-xl text-stone-400 shrink-0" data-chevron icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    </button>
+                    <div class="hidden px-6 md:px-8 pb-6 pl-14 md:pl-14" data-accordion-panel>
+                        <p class="text-sm text-stone-600 leading-relaxed">Sim. A plataforma foi projetada para incorporações, loteamentos, galpões logísticos e projetos residenciais para renda. Você modela diferentes tipologias em um único sistema.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="w-full flex items-center gap-4 p-6 md:p-8 text-left hover:bg-stone-100/50 transition-colors" data-accordion-trigger type="button">
+                        <iconify-icon class="text-xl text-teal-600 shrink-0" icon="solar:clock-circle-bold-duotone"></iconify-icon>
+                        <span class="flex-1 font-medium text-stone-900">Quanto tempo leva para analisar um projeto no RExSoft?</span>
+                        <iconify-icon class="text-xl text-stone-400 shrink-0" data-chevron icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    </button>
+                    <div class="hidden px-6 md:px-8 pb-6 pl-14 md:pl-14" data-accordion-panel>
+                        <p class="text-sm text-stone-600 leading-relaxed">Minutos. Você insere as premissas do seu empreendimento e o sistema gera automaticamente o fluxo de caixa completo com todos os indicadores financeiros.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="w-full flex items-center gap-4 p-6 md:p-8 text-left hover:bg-stone-100/50 transition-colors" data-accordion-trigger type="button">
+                        <iconify-icon class="text-xl text-teal-600 shrink-0" icon="solar:widget-2-bold-duotone"></iconify-icon>
+                        <span class="flex-1 font-medium text-stone-900">Preciso abandonar minhas planilhas completamente?</span>
+                        <iconify-icon class="text-xl text-stone-400 shrink-0" data-chevron icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    </button>
+                    <div class="hidden px-6 md:px-8 pb-6 pl-14 md:pl-14" data-accordion-panel>
+                        <p class="text-sm text-stone-600 leading-relaxed">Não precisa. Você pode usar o RExSoft para validar e padronizar suas análises, garantindo segurança nas decisões de alto impacto sem perder sua forma de trabalhar.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="w-full flex items-center gap-4 p-6 md:p-8 text-left hover:bg-stone-100/50 transition-colors" data-accordion-trigger type="button">
+                        <iconify-icon class="text-xl text-teal-600 shrink-0" icon="solar:users-group-rounded-bold-duotone"></iconify-icon>
+                        <span class="flex-1 font-medium text-stone-900">Como funciona o treinamento da minha equipe?</span>
+                        <iconify-icon class="text-xl text-stone-400 shrink-0" data-chevron icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    </button>
+                    <div class="hidden px-6 md:px-8 pb-6 pl-14 md:pl-14" data-accordion-panel>
+                        <p class="text-sm text-stone-600 leading-relaxed">O treinamento é dividido em etapas: primeiro, um onboarding personalizado com instruções operacionais da plataforma; depois, um diagnóstico dos processos de análise que sua empresa já utiliza hoje. A partir desse diagnóstico, montamos um treinamento personalizado focado na análise de viabilidade de novos negócios, usando a metodologia RExperts e o RExSoft como principal ferramenta. Você também recebe uma instrução específica sobre a reforma tributária, além de acesso completo aos nossos cursos — o Real Estate Academy e o Decodificando a Reforma Tributária no Mercado Imobiliário.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="w-full flex items-center gap-4 p-6 md:p-8 text-left hover:bg-stone-100/50 transition-colors" data-accordion-trigger type="button">
+                        <iconify-icon class="text-xl text-teal-600 shrink-0" icon="solar:shield-check-bold-duotone"></iconify-icon>
+                        <span class="flex-1 font-medium text-stone-900">Os dados dos meus projetos ficam seguros?</span>
+                        <iconify-icon class="text-xl text-stone-400 shrink-0" data-chevron icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    </button>
+                    <div class="hidden px-6 md:px-8 pb-6 pl-14 md:pl-14" data-accordion-panel>
+                        <p class="text-sm text-stone-600 leading-relaxed">Totalmente seguros. Usamos criptografia de nível bancário e você controla quem acessa cada projeto através de perfis de permissão específicos por empreendimento.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="w-full flex items-center gap-4 p-6 md:p-8 text-left hover:bg-stone-100/50 transition-colors" data-accordion-trigger type="button">
+                        <iconify-icon class="text-xl text-teal-600 shrink-0" icon="solar:document-text-bold-duotone"></iconify-icon>
+                        <span class="flex-1 font-medium text-stone-900">O software calcula os impactos da reforma tributária?</span>
+                        <iconify-icon class="text-xl text-stone-400 shrink-0" data-chevron icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    </button>
+                    <div class="hidden px-6 md:px-8 pb-6 pl-14 md:pl-14" data-accordion-panel>
+                        <p class="text-sm text-stone-600 leading-relaxed">Sim. O RExSoft é o único sistema que já incorpora os impactos da nova tributação para todos os tipos de empreendimentos imobiliários.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="w-full flex items-center gap-4 p-6 md:p-8 text-left hover:bg-stone-100/50 transition-colors" data-accordion-trigger type="button">
+                        <iconify-icon class="text-xl text-teal-600 shrink-0" icon="solar:layers-bold-duotone"></iconify-icon>
+                        <span class="flex-1 font-medium text-stone-900">Posso comparar diferentes cenários de um mesmo projeto?</span>
+                        <iconify-icon class="text-xl text-stone-400 shrink-0" data-chevron icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    </button>
+                    <div class="hidden px-6 md:px-8 pb-6 pl-14 md:pl-14" data-accordion-panel>
+                        <p class="text-sm text-stone-600 leading-relaxed">Pode. Você cria cenários otimistas, pessimistas e realistas com poucos cliques, testando a sensibilidade das suas premissas sem retrabalho.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="w-full flex items-center gap-4 p-6 md:p-8 text-left hover:bg-stone-100/50 transition-colors" data-accordion-trigger type="button">
+                        <iconify-icon class="text-xl text-teal-600 shrink-0" icon="solar:calculator-bold-duotone"></iconify-icon>
+                        <span class="flex-1 font-medium text-stone-900">Como sei que os cálculos do sistema estão corretos?</span>
+                        <iconify-icon class="text-xl text-stone-400 shrink-0" data-chevron icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    </button>
+                    <div class="hidden px-6 md:px-8 pb-6 pl-14 md:pl-14" data-accordion-panel>
+                        <p class="text-sm text-stone-600 leading-relaxed">O RExSoft usa a mesma metodologia que a RExperts aplica em suas consultorias estratégicas. Cada fórmula é auditada e validada por especialistas do setor.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="w-full flex items-center gap-4 p-6 md:p-8 text-left hover:bg-stone-100/50 transition-colors" data-accordion-trigger type="button">
+                        <iconify-icon class="text-xl text-teal-600 shrink-0" icon="solar:wallet-money-bold-duotone"></iconify-icon>
+                        <span class="flex-1 font-medium text-stone-900">Quanto custa a assinatura do RExSoft?</span>
+                        <iconify-icon class="text-xl text-stone-400 shrink-0" data-chevron icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    </button>
+                    <div class="hidden px-6 md:px-8 pb-6 pl-14 md:pl-14" data-accordion-panel>
+                        <p class="text-sm text-stone-600 leading-relaxed">O valor do investimento varia de acordo com a necessidade, o escopo do projeto e os serviços contratados. Fale com a nossa equipe para uma proposta personalizada.</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="w-full flex items-center gap-4 p-6 md:p-8 text-left hover:bg-stone-100/50 transition-colors" data-accordion-trigger type="button">
+                        <iconify-icon class="text-xl text-teal-600 shrink-0" icon="solar:undo-left-round-bold-duotone"></iconify-icon>
+                        <span class="flex-1 font-medium text-stone-900">E se o sistema não atender minhas necessidades?</span>
+                        <iconify-icon class="text-xl text-stone-400 shrink-0" data-chevron icon="solar:alt-arrow-down-linear"></iconify-icon>
+                    </button>
+                    <div class="hidden px-6 md:px-8 pb-6 pl-14 md:pl-14" data-accordion-panel>
+                        <p class="text-sm text-stone-600 leading-relaxed">Você tem 7 dias de garantia. Se demonstrar que uma planilha manual foi mais precisa que nossa plataforma, devolvemos 100% do seu investimento.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-stone-600 p-8 md:p-12 border-t border-stone-300 max-w-2xl mx-auto reveal">Suas dúvidas foram respondidas. Agora é hora de tomar a decisão que vai transformar a forma como sua empresa analisa novos negócios.</p>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- 15 — LOCALIZAÇÃO -->
+        <!-- ============================================================ -->
+        <section class="relative z-10 border-b border-stone-300 bg-white">
+            <div class="p-8 md:p-12 border-b border-stone-300 bg-stone-100/50 reveal">
+                <span class="text-xs font-mono uppercase text-teal-600 block mb-2">15 / Localização</span>
+                <h2 class="text-3xl md:text-5xl font-medium tracking-tighter text-stone-900">Venha nos visitar</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="p-8 md:p-12 border-b md:border-b-0 md:border-r border-stone-300 reveal">
+                    <p class="text-stone-700 leading-relaxed mb-8">Somos uma empresa com mais de 11 anos de atividade no mercado imobiliário e 2 escritórios, será um prazer receber uma visita para um café.</p>
+                    <div class="border border-stone-300 rounded-lg p-5 mb-6 bg-stone-50">
+                        <p class="text-sm font-semibold text-stone-900">RExperts Consultoria e Educação Ltda.</p>
+                        <p class="text-sm text-stone-500 mt-1">CNPJ: 28.115.991/0001-77</p>
+                        <p class="text-sm text-stone-500">CRECI-SP nº 36475-J</p>
+                    </div>
+                    <div class="flex items-start gap-3 mb-4">
+                        <iconify-icon class="text-xl text-teal-600 mt-0.5" icon="solar:map-point-bold-duotone"></iconify-icon>
+                        <div>
+                            <p class="text-sm font-semibold text-stone-900">Escritório São Paulo:</p>
+                            <p class="text-sm text-stone-600">Av. Pedroso de Morais 433, Pinheiros - São Paulo/SP</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <iconify-icon class="text-xl text-teal-600 mt-0.5" icon="solar:map-point-bold-duotone"></iconify-icon>
+                        <div>
+                            <p class="text-sm font-semibold text-stone-900">Escritório Americana:</p>
+                            <p class="text-sm text-stone-600">Av. Brasil 1500, Ed. NY, salas 408/409 - Americana, SP</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8 md:p-12 reveal delay-200">
+                    <div class="rounded-lg overflow-hidden border border-stone-300 shadow-sm h-[400px]">
+                        <iframe allowfullscreen height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0!2d-46.6916!3d-23.5642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce579a2d0e3b3b%3A0x0!2sAv.+Pedroso+de+Morais%2C+433+-+Pinheiros%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000" style="border:0;" title="Localização RExperts - São Paulo" width="100%"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </main>
+
+        <!-- ============================================================ -->
+        <!-- FOOTER -->
+        <!-- ============================================================ -->
+        <footer class="relative z-10 bg-dark-900 text-stone-300 pt-16 pb-8 overflow-hidden">
+            <div class="px-6 md:px-12 mb-16 text-center reveal">
+                <h2 class="text-3xl md:text-5xl font-medium tracking-tighter mb-6 text-white">Pronto para profissionalizar<br />sua análise?</h2>
+                <a class="inline-block border border-dark-700 rounded-full px-8 py-3 text-sm hover:bg-teal-400 hover:text-dark-900 hover:border-teal-400 transition-all duration-300" href="#hero">Voltar ao topo</a>
+            </div>
+            <div class="border-t border-dark-700 w-full mb-8"></div>
+            <div class="px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-6 relative z-10">
+                <div class="flex items-center gap-3">
+                    <img alt="Rexperts" class="h-7 w-auto" src="assets/img/logos/logo-rexperts-branca.png" />
+                    <p class="text-sm text-stone-400">RExSoft — Desenvolvido pela maior referência em Real Estate do Brasil</p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 sm:gap-8">
+                    <a class="flex items-center gap-2 text-sm text-stone-300 hover:text-teal-400 transition-colors" href="https://api.whatsapp.com/send/?phone=5511934719414&amp;text=Ol%C3%A1+gostaria+de+informa%C3%A7%C3%B5es+sobre+o+APP_RExSoft.&amp;type=phone_number&amp;app_absent=0" rel="noopener noreferrer" target="_blank">
+                        <iconify-icon class="text-lg" icon="solar:chat-round-dots-bold-duotone"></iconify-icon> WhatsApp
+                    </a>
+                    <a class="flex items-center gap-2 text-sm text-stone-300 hover:text-teal-400 transition-colors" href="mailto:contato@rexsoft.com.br">
+                        <iconify-icon class="text-lg" icon="solar:letter-bold-duotone"></iconify-icon> contato@rexsoft.com.br
+                    </a>
+                </div>
+            </div>
+            <div class="text-center text-xs text-stone-500 mt-8 px-6">© 2026 RExperts. Todos os direitos reservados.</div>
+            <!-- <div class="mt-16 text-center ghost-watermark select-none overflow-hidden"> -->
+                <!-- <span class="text-[6rem] md:text-[12rem] font-bold leading-none tracking-tighter">RExSoft</span> -->
+            <!-- </div> -->
+        </footer>
+    </div>
+
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <a aria-label="Fale pelo WhatsApp" class="w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform bg-[#25D366]" href="https://api.whatsapp.com/send/?phone=5511934719414&amp;text=Ol%C3%A1+gostaria+de+informa%C3%A7%C3%B5es+sobre+o+APP_RExSoft.&amp;type=phone_number&amp;app_absent=0" rel="noopener noreferrer" target="_blank">
+            <iconify-icon class="text-2xl text-white" icon="mdi:whatsapp"></iconify-icon>
+        </a>
+        <a aria-label="Envie um e-mail" class="w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform bg-teal-600" href="mailto:contato@rexsoft.com.br">
+            <iconify-icon class="text-2xl text-white" icon="solar:letter-linear"></iconify-icon>
+        </a>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
